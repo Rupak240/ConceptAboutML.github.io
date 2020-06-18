@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/Logo.png" %}">
+  <link rel="stylesheet" href="css/supportVector.css">
+  <title>ML Introduction</title>
+</head>
+
+<body>
+
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">MachineLearning</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="concepts.html">MCQs</a>
+        <a class="mr-5 hover:text-gray-900" href="download.html">Download</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+      </nav>
+      <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Button
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+
+  <section>
+    <div>
+      <p class="leading-relaxed text-base">
+
+        <b class="header"> Machine Learning is great for: </b> <br>
+        1. Problems for which existing solutions require a lot of hand-tuning or long lists of rules: one Machine Learning algorithm can often simplify code and perform better. <br>
+        2. Complex problems for which there is no good solution at all using a traditional approach: the best Machine Learning techniques can find a solution. <br>
+        3. Fluctuating environments: a Machine Learning system can adapt to new data. <br>
+        4. Getting insights about complex problems and large amounts of data. <br> <br>
+
+        Machine Learning systems can be classified according to the amount and type of supervision they get during training. There are four major categories: <br>
+        <b> Supervised learning, Unsupervised learning, Semisupervised learning and Reinforcement Learning. </b> <br> <br>
+
+        <b>Some of the most important supervised learning algorithms : </b> <br>
+        • k-Nearest Neighbors <br>
+        • Linear Regression <br>
+        • Logistic Regression <br>
+        • Support Vector Machines (SVMs) <br>
+        • Decision Trees and Random Forests <br>
+        • Neural networks <br> <br>
+
+        [ Some neural network architectures can be unsupervised, such as autoencoders and restricted Boltzmann machines. They can also be semisupervised, such as in deep belief networks and unsupervised pretraining. ] <br> <br>
+
+        <b> Some of the most important unsupervised learning algorithms : </b> <br>
+        • Clustering <br>
+        — k-Means <br>
+        — Hierarchical Cluster Analysis (HCA) <br>
+        — Expectation Maximization <br>
+        • Visualization and dimensionality reduction <br>
+        — Principal Component Analysis (PCA) <br>
+        — Kernel PCA <br>
+        — Locally-Linear Embedding (LLE) <br>
+        — t-distributed Stochastic Neighbor Embedding (t-SNE) <br>
+        • Association rule learning <br> — Apriori <br> — Eclat <br> <br>
+
+
+        <b>Supervised learning:</b> <br>
+        In supervised learning, the training data you feed to the algorithm includes the desired solutions, called labels.
+        A typical supervised learning task is classification. The spam filter is a good example of this: it is trained with many example emails along with their class (spam or ham), and it must learn how to classify new emails.
+        <br> Another typical task is to predict a target numeric value, such as the price of a car, given a set of features (mileage, age, brand, etc.) called predictors. This sort of task is called regression. <br> <br>
+
+        <b>Unsupervised Learning: </b> <br>
+        Here, the training data is unlabelled. <br>
+        Visualization algorithms are good examples of unsupervised learning algorithms.
+        Dimensionality reduction, in which the goal is to simplify the data without losing too much information. One way to do this is to merge several correlated features into one. <br>
+        Another important unsupervised task is – anomaly detection, removing unused or extra data. <br>
+        Another common unsupervised task is association rule learning, in which the goal is to dig into large amounts of data and discover interesting relations between attributes. <br> <br>
+
+        <b> Semisupervised Learning: </b> <br>
+        Some algorithms can deal with partially labeled training data, usually a lot of unlabeled data and a little bit of labeled data. This is called semisupervised learning. <br> <br>
+
+
+        <b> Reinforcement Learning: </b> <br>
+        Reinforcement Learning is a very different beast. <br>
+        The learning system, called an agent in this context, can observe the environment, select and perform actions, and get rewards in return (or penalties in the form of negative rewards). <br>
+        It must then learn by itself what is the best strategy, called a policy, to get the most reward over time. A policy defines what action the agent should choose when it is in a given situation. <br>
+        For example, many robots implement Reinforcement Learning algorithms to learn how to walk. DeepMind’s AlphaGo program is also a good example of Reinforcement Learning. <br> <br>
+
+
+
+
+
+
+
+
+
+        <b> Another criterion used to classify Machine Learning systems is whether or not the system can learn incrementally from a stream of incoming data. </b> <br>
+        In <b> Batch learning </b>, the system is <b> incapable of learning incrementally </b>: it must be trained using all the available data.
+        This will generally take a lot of time and computing resources, so it is typically done offline. First the system is trained, and then it is
+        launched into production and runs without learning anymore; it just applies what it has learned. This is called <b> Offline learning. </b> <br> <br>
+        If you want a batch learning system to know about new data (such as a new type of spam), you need to train a new version of the system from scratch
+        on the full dataset (not just the new data, but also the old data), then stop the old system and replace it with the new one. <br> <br>
+        This solution is simple and often works fine, but training using the full set of data can take many hours, so you would typically train a new system
+        only every 24 hours or even just weekly. If your system needs to adapt to rapidly changing data (e.g. to predict stock prices), then you need a more
+        reactive solution. <br> <br>
+        Also, training on the full set of data requires a lot of computing resources (CPU, memory space, disk space, disk I/O, network I/O, etc.). If you have
+        a lot of data and you automate your system to train from scratch every day, it will end up costing you a lot of money. If the amount of data is huge,
+        it may even be impossible to use a batch learning algorithm. <br> <br>
+        Finally, if your system needs to be able to learn autonomously and it has limited resources (e.g. a smartphone application or a rover on Mars), then
+        carrying around large amounts of training data and taking up a lot of resources to train for hours every day is a showstopper. <br> <br>
+        Fortunately, a better option in all these cases is to use algorithms that are capable of learning incrementally. <br> <br>
+
+
+        In <b>Online learning</b>, you train the system incrementally by feeding it data instances sequentially, either individually or by small groups
+        called <b>mini-batches</b>. Each learning step is fast and cheap, so the system can learn about new data on the fly, as it arrives. <br> <br>
+        Online learning is great for systems that receive data as a continuous flow (e.g., stock prices) and need to adapt to change rapidly or autonomously.
+        It is also a good option if you have limited computing resources: once an online learning system has learned about new data instances, it does not
+        need them anymore, so you can discard them (unless you want to be able to roll back to a previous state and “replay” the data). This can save a huge
+        amount of space. <br> <br>
+        Online learning algorithms can also be used to train systems on huge datasets that cannot fit in one machine’s main memory (this is called <b> out-of-core
+          learning </b>). The algorithm loads part of the data, runs a training step on that data, and repeats the process until it has run on all of the data. <br> <br>
+        <b> This whole process is usually done offline (i.e., not on the live system), so online learning can be a confusing name. Think of it as incremental learning. </b> <br> <br>
+        One important parameter of online learning systems is how fast they should adapt to changing data: this is called the <b>learning rate</b>. If you set a high
+        learning rate, then your system will rapidly adapt to new data, but it will also tend to quickly forget the old data (you don’t want a spam filter to flag
+        only the latest kinds of spam it was shown). Conversely, if you set a low learning rate, the system will have more inertia; that is, it will learn more slowly,
+        but it will also be less sensitive to noise in the new data or to sequences of nonrepresentative data points. <br> <br>
+        A big challenge with online learning is that if bad data is fed to the system, the system’s performance will gradually decline. If we are talking about a
+        live system, your clients will notice. <br> <br>
+
+
+
+
+
+
+
+        <b> One more way to categorize Machine Learning systems is by how they generalize. </b> Most Machine Learning tasks are about making predictions.
+        This means that given a number of training examples, the system needs to be able to generalize to examples it has never seen before. Having a
+        good performance measure on the training data is good, but insufficient; the true goal is to perform well on new instances. <br> <br>
+        <b> There are two main approaches to generalization: instance-based learning and model-based learning. </b>
+        Instead of just flagging emails that are identical to known spam emails, your spam filter could be programmed to also flag emails that are very
+        similar to known spam emails. This requires a measure of similarity between two emails. A (very basic) similarity measure between two emails
+        could be to count the number of words they have in common. The system would flag an email as spam if it has many words in common with a known
+        spam email. <br> <br>
+        This is called <b>instance-based learning</b>: the system learns the examples by heart, then generalizes to new cases using a similarity measure. <br> <br>
+        Another way to generalize from a set of examples is to build a model of these examples, then use that model to make predictions. This is called <b> model-based learning</b>. <br> <br>
+
+
+
+
+
+
+
+
+
+        <b> Overfitting the Training Data : </b> <br>
+        Say you are visiting a foreign country and the taxi driver rips you off. You might be tempted to say that all taxi drivers in that country are thieves.
+        <b>Overgeneralizing</b> is something that we humans do all too often, and unfortunately machines can fall into the same trap if we are not careful.
+        In Machine Learning this is called overfitting: it means that the model performs well on the training data, but it does not generalize well. <br> <br>
+        <b>Overfitting</b> happens when the model is too complex relative to the amount and noisiness of the training data. The possible solutions are: <br>
+        • To simplify the model by selecting one with fewer parameters (e.g., a linear model rather than a high-degree polynomial model), by reducing the number of attributes in the training data or by constraining the model
+        <br> • To gather more training data <br>
+        • To reduce the noise in the training data (e.g., fix data errors and remove outliers) <br> <br>
+        Constraining a model to make it simpler and reduce the risk of overfitting is called <b>regularization</b>. <br>
+        The amount of regularization to apply during learning can be controlled by a <b>hyperparameter</b>. A hyperparameter is a parameter of a learning
+        algorithm (not of the model). As such, it is not affected by the learning algorithm itself; it must be set prior to training and remains constant
+        during training. If you set the regularization hyper parameter to a very large value, you will get an almost flat model (a slope close to zero);
+        the learning algorithm will almost certainly not overfit the training data, but it will be less likely to find a good solution.
+        <b>Tuning hyperparameters is an important part of building a Machine Learning system.</b> <br> <br>
+
+        <b> Underfitting is the opposite of overfitting: </b> it occurs when your model is too simple to learn the underlying structure of the data.
+        For example, a linear model of life satisfaction is prone to underfit; reality is just more complex than the model, so its predictions are bound
+        to be inaccurate, even on the training examples. <br> <br>
+
+        <b>The main options to fix this problem are: </b> <br>
+        • Selecting a more powerful model, with more parameters <br>
+        • Feeding better features to the learning algorithm (feature engineering) <br>
+        • Reducing the constraints on the model (e.g., reducing the regularization hyper‐ parameter) <br> <br>
+
+        <b>Testing and Validation : </b> <br>
+        The only way to know how well a model will generalize to new cases is to actually try it out on new cases. One way to do that is to put
+        your model in production and monitor how well it performs. <br> <br>
+        A better option is to split your data into two sets: <b>the training set and the test set</b>. As these names imply, you train your model
+        using the training set, and you test it using the test set. The error rate on new cases is called the generalization error (or <b>out-of sample error</b> ),
+        and by evaluating your model on the test set, you get an estimation of this error. This value tells you how well your model will perform on
+        instances it has never seen before. <br> <br>
+        If the training error is low (i.e., your model makes few mistakes on the training set) but the generalization error is high, it means that
+        your model is overfitting the training data. <br> <br>
+        <b> It is common to use 80% of the data for training and hold out 20% for testing. </b> <br> <br>
+        So evaluating a model is simple enough: just use a test set. Now suppose you are hesitating between two models (say a linear model and
+        a polynomial model): how can you decide? One option is to train both and compare how well they generalize using the test set. <br> <br>
+        Now suppose that the linear model generalizes better, but you want to apply some regularization to avoid overfitting. The question is: how do you
+        choose the value of the regularization hyperparameter? One option is to train 100 different models using 100 different values for this hyperparameter.
+        Suppose you find the best hyperparameter value that produces a model with the lowest generalization error, say just 5% error. <br> <br>
+        So you launch this model into production, but unfortunately it does not perform as well as expected and produces 15% errors. What just happened? <br> <br>
+        The problem is that you measured the generalization error multiple times on the test set, and you adapted the model and hyperparameters to produce
+        the best model for that set. This means that the model is unlikely to perform as well on new data. <br> <br>
+        A common solution to this problem is to have a second holdout set called the <b>validation set</b>. You train multiple models with various hyperparameters
+        using the training set, you select the model and hyperparameters that perform best on the validation set, and when you’re happy with your model you
+        run a single final test against the test set to get an estimate of the generalization error. <br> <br>
+        To avoid “wasting” too much training data in validation sets, a common technique is to use cross-validation: the training set is split into
+        complementary subsets, and each model is trained against a different combination of these subsets and validated against the remaining parts.
+        Once the model type and hyperparameters have been selected, a final model is trained using these hyperparameters on the full training set, and
+        the generalized error is measured on the test set. <br> <br>
+
+
+      </p>
+    </div>
+  </section>
+  <br> <br> <br> <br>
+
+
+
+
+
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">MachineLearning</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">A newly created site that talks about Machine Learning...</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_intro.html" target="_blank">ML Introduction</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623" target="_blank">ML Classifiers</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="binaryVSmulti.html" target="_blank">ML Classification</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="linear_regression.html" target="_blank">Linear Regression</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="logisticReg.html" target="_blank">Logistic Regression</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="decisionTree.html" target="_blank">Decision Tree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="leastSquare.html" target="_blank">Least Square Method</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="supportVector.html" target="_blank">Support Vector Machine</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="kMeansClustering.html" target="_blank">K-Means Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="discretization.html" target="_blank">Binning or Discretization</a>
+            </li>
+
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="naiveBayes.html" target="_blank">Naive Bayes Classifier</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="normalDistribution.html" target="_blank">Normal Distribution</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="confusionMatrix.html" target="_blank">Confusion Matrix</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="randomForest.html" target="_blank">Random Forest</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="gd.html" target="_blank">Gradient Descent</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-9">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_clustering.html" target="_blank">ML Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="clustering.html" target="_blank">More About Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ensemableLearning.html">Ensemable Learning Techniques</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/" target="_blank">Neural Networks</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="nlp.html" target="_blank">NLP Text Preprocessing</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Machine Learning —
+          <a rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">RupakDey</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/rupak.dey.94849/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>

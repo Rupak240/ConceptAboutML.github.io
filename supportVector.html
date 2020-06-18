@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/supportVector.css">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <title>Support Vector Classifier</title>
+</head>
+
+<body>
+
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">MachineLearning</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="concepts.html">MCQs</a>
+        <a class="mr-5 hover:text-gray-900" href="download.html">Download</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+  <section>
+    <div>
+      <p class="leading-relaxed text-base">
+
+      <h2><b class="heading">Support Vector Machine...</b></h2> <br>
+      <br>
+
+      <b class="header">Support Vector Machine</b> is highly preferred by many as it produces significant accuracy with less computation power.
+      Support Vector Machine <b class="header"> (SVM) </b> can be used for both regression and classification tasks. But, it is widely used in classification objectives. <br> <br>
+
+
+      The objective of the support vector machine algorithm is to find a hyperplane in an N-dimensional space(N — the number of features) that
+      distinctly classifies the data points. <br> <br>
+
+      To separate the two classes of data points, there are many possible hyperplanes that could be chosen. Our objective is to find a plane
+      that has the maximum margin, i.e the maximum distance between data points of both classes. Maximizing the margin distance provides some
+      reinforcement so that future data points can be classified with more confidence. <br> <br>
+
+      <img src="https://miro.medium.com/max/1400/0*ecA4Ls8kBYSM5nza.jpg" alt=""> <br> <br>
+
+      <b> SVM is mostly about making two or more separate classes of data points. </b> In real world application, finding perfect class for millions of training data
+      set takes lot of time. Thats why, we define two terms <b> regularization parameter, Kernel </b> and <b> gamma </b>. These are tuning
+      parameters in SVM classifier. Varying those we can achive considerable non linear classification line with more accuracy in reasonable amount of time. <br> <br>
+
+      <b class="header">Kernel: </b>
+      The learning of the hyperplane in linear SVM is done by transforming the problem using some linear algebra. This is where the kernel plays role. <br> <br>
+
+      <b class="header"> Regularization: </b>
+      The Regularization parameter (often termed as C parameter in python’s sklearn library) tells the SVM optimization how much you want to avoid
+      misclassifying each training example. <br>
+      For large values of C, the optimization will choose a smaller-margin hyperplane if that hyperplane does a better job of getting all the training
+      points classified correctly. Conversely, a very small value of C will cause the optimizer to look for a larger-margin separating hyperplane, even
+      if that hyperplane misclassifies more points. <br> <br>
+
+      <b class="header">Gamma: </b>
+      The gamma parameter defines how far the influence of a single training example reaches, with low values meaning ‘far’ and high values
+      meaning ‘close’. In other words, with low gamma, points far away from plausible seperation line are considered in calculation for the
+      seperation line. Where as high gamma means the points close to plausible line are considered in calculation. <br> <br>
+
+      <img class="mlpic" src="https://miro.medium.com/max/1200/1*dGDQxV8j83VB90skHsXktw.png" alt="">
+      <img class="mlpic1" src="https://miro.medium.com/max/1200/1*ClmsnU_yb1YtIwAAr7krmg.png" alt=""> <br> <br>
+
+      <b class="header"> Margin: </b>
+      And finally last but very importrant characteristic of SVM classifier. SVM to core tries to achieve a good margin.
+      <b>A margin is a separation of line to the closest class points.</b>
+      A good margin is one where this separation is larger for both the classes. Images below gives to visual example of good
+      and bad margin. A good margin allows the points to be in their respective classes without crossing to other class. <br> <br>
+
+      <img src="https://miro.medium.com/max/1200/1*Ftns0ebfUHJDdpWt3Wvp-Q.png" alt="">
+      <img src="https://miro.medium.com/max/1200/1*NbGV1iEtNuklACNUv74w7A.png" alt=""> <br> <br>
+      </p>
+
+      <br> <br>
+      <a class="text-indigo-500 inline-flex items-center mt-4" href="https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47" target="_blank">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+
+    </div>
+    <br><br>
+  </section>
+
+
+
+
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">MachineLearning</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">A newly created site that talks about Machine Learning...</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_intro.html" target="_blank">ML Introduction</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623" target="_blank">ML Classifiers</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="binaryVSmulti.html" target="_blank">ML Classification</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="linear_regression.html" target="_blank">Linear Regression</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="logisticReg.html" target="_blank">Logistic Regression</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="decisionTree.html" target="_blank">Decision Tree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="leastSquare.html" target="_blank">Least Square Method</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="supportVector.html" target="_blank">Support Vector Machine</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="kMeansClustering.html" target="_blank">K-Means Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="discretization.html" target="_blank">Binning or Discretization</a>
+            </li>
+
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="naiveBayes.html" target="_blank">Naive Bayes Classifier</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="normalDistribution.html" target="_blank">Normal Distribution</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="confusionMatrix.html" target="_blank">Confusion Matrix</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="randomForest.html" target="_blank">Random Forest</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="gd.html" target="_blank">Gradient Descent</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-9">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_clustering.html" target="_blank">ML Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="clustering.html" target="_blank">More About Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ensemableLearning.html">Ensemable Learning Techniques</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/" target="_blank">Neural Networks</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="nlp.html" target="_blank">NLP Text Preprocessing</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Machine Learning —
+          <a rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">RupakDey</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/rupak.dey.94849/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>

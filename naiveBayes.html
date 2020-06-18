@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/supportVector.css">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <title>Naive Bayes Classifier</title>
+</head>
+
+<body>
+
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">MachineLearning</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="concepts.html">MCQs</a>
+        <a class="mr-5 hover:text-gray-900" href="download.html">Download</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+  <section>
+    <div>
+      <p class="leading-relaxed text-base">
+
+      <h2><b class="heading">Naive Bayes Classifier...</b></h2> <br>
+
+      <b> Naive Bayes classifiers </b> are a collection of classification algorithms based on <b> Bayes’ Theorem </b>
+      . It is not a single algorithm but a family of algorithms where all of them share a common principle, i.e. every pair of
+      features being classified is independent of each other. <br> <br>
+
+      <b>The classifier is based on Bayes Theorem.</b> Bayes’ Theorem finds the probability of an event occurring given the
+      probability of another event that has already occurred. Bayes’ theorem is stated mathematically as the following equation: <br> <br>
+
+      <img src="https://miro.medium.com/max/1020/1*tjcmj9cDQ-rHXAtxCu5bRQ.png" alt=""> <br>
+
+      Here, the dataset is divided into two parts, namely, <b class="header"> feature matrix and the response vector </b>. <br> <br>
+
+      Feature matrix contains all the vectors(rows) of dataset in which each vector consists of the value of dependent features. <br> <br>
+      Response vector contains the value of class variable(prediction or output) for each row of feature matrix. <br> <br>
+
+      The fundamental Naive Bayes assumption is that each feature makes an: <br>
+      <b> 1. independent <br>
+        2. equal contribution </b> to the outcome. <br> <br> <br>
+
+
+      <b class="header"> <i> we can apply Bayes’ theorem in following way: </i> </b> <br> <br>
+
+      <img src="https://miro.medium.com/max/968/1*Gb2Ifjn1olE5ML6mqY5WNQ.png" alt=""> <br>
+      <i> where, y is class variable and X is a dependent feature vector (of size n) where: </i> <br> <br>
+
+      X is given as:
+      <img src="https://miro.medium.com/max/1088/1*RFUldC6DTLSQ_8ZEDxDKBQ.png" alt=""> <br> <br>
+
+      <b class="header"> <i> Types of Naive Bayes Classifier: </i> </b> <br>
+      <b> 1. Multinomial Naive Bayes, <br>
+        2. Bernoulli Naive Bayes, <br>
+        3. Gaussian Naive Bayes. </b> <br> <br>
+
+
+      </p>
+      <br>
+
+      <a class="text-indigo-500 inline-flex items-center mt-4" href="https://towardsdatascience.com/naive-bayes-classifier-81d512f50a7c" target="_blank">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+
+
+      <a class="text-indigo-500 inline-flex items-center mt-4" href="https://www.geeksforgeeks.org/naive-bayes-classifiers/" target="_blank">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+
+    </div>
+  </section>
+
+  <br> <br>
+
+
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">MachineLearning</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">A newly created site that talks about Machine Learning...</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_intro.html" target="_blank">ML Introduction</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623" target="_blank">ML Classifiers</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="binaryVSmulti.html" target="_blank">ML Classification</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="linear_regression.html" target="_blank">Linear Regression</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="logisticReg.html" target="_blank">Logistic Regression</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="decisionTree.html" target="_blank">Decision Tree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="leastSquare.html" target="_blank">Least Square Method</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="supportVector.html" target="_blank">Support Vector Machine</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="kMeansClustering.html" target="_blank">K-Means Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="discretization.html" target="_blank">Binning or Discretization</a>
+            </li>
+
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="naiveBayes.html" target="_blank">Naive Bayes Classifier</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="normalDistribution.html" target="_blank">Normal Distribution</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="confusionMatrix.html" target="_blank">Confusion Matrix</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="randomForest.html" target="_blank">Random Forest</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="gd.html" target="_blank">Gradient Descent</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-9">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_clustering.html" target="_blank">ML Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="clustering.html" target="_blank">More About Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ensemableLearning.html">Ensemable Learning Techniques</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/" target="_blank">Neural Networks</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="nlp.html" target="_blank">NLP Text Preprocessing</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Machine Learning —
+          <a rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">RupakDey</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/rupak.dey.94849/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>

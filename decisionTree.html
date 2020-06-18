@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/decisionTree.css">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <title>Decision Tree</title>
+</head>
+
+<body>
+
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">MachineLearning</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="concepts.html">MCQs</a>
+        <a class="mr-5 hover:text-gray-900" href="download.html">Download</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+  <section>
+    <div>
+      <p class="leading-relaxed text-base">
+
+      <h2> <b class="heading">Decision Tree... </b></h2> <br>
+
+      <b> Decision Tree is one of the easiest and popular classification algorithms to understand and interpret. It can be utilized for both classification and regression kind of problem. </b>
+      <br> <br>
+      <img class="main-image" src="https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1545934190/2_btay8n.png" alt=""> <br> <br>
+
+      <b class="header"> Attribute Selection Measures </b> <br>
+      Attribute selection measure is a heuristic for selecting the splitting criterion that partition data into the best possible manner.
+      It is also known as splitting rules because it helps us to determine breakpoints for tuples on a given node.<b> ASM provides a rank to each
+        feature(or attribute) by explaining the given dataset. </b> Best score attribute will be selected as a <b> splitting attribute </b>. In the
+      case of a continuous-valued attribute, split points for branches also need to define. Most popular selection measures are <b> Information Gain,
+        Gain Ratio, and Gini Index. </b> <br> <br>
+
+      <b class="header">Information Gain: </b> <br>
+      Information gain is the decrease in entropy. Information gain computes the difference between entropy before split
+      and average entropy after split of the dataset based on given attribute values. <br> <br>
+
+      <b class="header"> Gain Ratio: </b> <br>
+      Information gain is biased for the attribute with many outcomes. It means it prefers the attribute with a large number of distinct values. <br> <br>
+
+      The gain ratio can be defined as: <br>
+      <img src="https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1545934190/7_xnqpo8.png" alt=""> <br>
+
+
+      <b>The attribute with the highest gain ratio is chosen as the splitting attribute. </b> <br> <br>
+
+      <b class="header"> Gini index: </b> <br>
+      Another decision tree algorithm CART (Classification and Regression Tree) uses the Gini method to create split points. <br> <br>
+
+      <img src="https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1545934190/8_k4ia8r.png" alt=""> <br>
+
+      Where, pi is the probability that a tuple in D belongs to class Ci. <br>
+
+      The Gini Index considers a binary split for each attribute. You can compute a weighted sum of the impurity of each partition. <br> <br>
+
+
+      <b class="header"> Optimizing Decision Tree Performance: </b> <br> <br>
+      <b>criterion</b> : optional (default=”gini”) or Choose attribute selection measure: This parameter allows us to use the different-different
+      attribute selection measure. Supported criteria are “gini” for the Gini index and “entropy” for the information gain. <br> <br>
+
+      <b>splitter</b> : string, optional (default=”best”) or Split Strategy: This parameter allows us to choose the split strategy. Supported
+      strategies are “best” to choose the best split and “random” to choose the best random split. <br> <br>
+
+      <b>max_depth</b> : int or None, optional (default=None) or Maximum Depth of a Tree: The maximum depth of the tree. If None, then nodes are
+      expanded until all the leaves contain less than min_samples_split samples. The higher value of maximum depth causes overfitting, and a lower
+      value causes underfitting (Source). <br> <br>
+
+
+      <b class="header"> Pros: </b> <br>
+      1. Decision trees are easy to interpret and visualize. <br>
+      2. It can easily capture Non-linear patterns. <br>
+      3. It requires fewer data preprocessing from the user, for example, there is no need to normalize columns. <br>
+      4. It can be used for feature engineering such as predicting missing values, suitable for variable selection. <br>
+      5. The decision tree has no assumptions about distribution because of the non-parametric nature of the algorithm. <br> <br>
+      <b class="header">Cons: </b> <br>
+      1. Sensitive to noisy data. It can overfit noisy data. <br>
+      2. The small variation(or variance) in data can result in the different decision tree. This can be reduced by bagging and boosting algorithms. <br>
+      3. Decision trees are biased with imbalance dataset, so it is recommended that balance out the dataset before creating the decision tree. <br> <br>
+
+
+      </p>
+    </div>
+  </section>
+
+
+
+
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">MachineLearning</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">A newly created site that talks about Machine Learning...</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_intro.html" target="_blank">ML Introduction</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623" target="_blank">ML Classifiers</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="binaryVSmulti.html" target="_blank">ML Classification</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="linear_regression.html" target="_blank">Linear Regression</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="logisticReg.html" target="_blank">Logistic Regression</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="decisionTree.html" target="_blank">Decision Tree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="leastSquare.html" target="_blank">Least Square Method</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="supportVector.html" target="_blank">Support Vector Machine</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="kMeansClustering.html" target="_blank">K-Means Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="discretization.html" target="_blank">Binning or Discretization</a>
+            </li>
+
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="naiveBayes.html" target="_blank">Naive Bayes Classifier</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="normalDistribution.html" target="_blank">Normal Distribution</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="confusionMatrix.html" target="_blank">Confusion Matrix</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="randomForest.html" target="_blank">Random Forest</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="gd.html" target="_blank">Gradient Descent</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-9">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_clustering.html" target="_blank">ML Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="clustering.html" target="_blank">More About Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ensemableLearning.html">Ensemable Learning Techniques</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/" target="_blank">Neural Networks</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="nlp.html" target="_blank">NLP Text Preprocessing</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Machine Learning —
+          <a rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">RupakDey</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/rupak.dey.94849/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>

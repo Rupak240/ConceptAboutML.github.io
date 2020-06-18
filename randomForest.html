@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/supportVector.css">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <title>Random Forest</title>
+</head>
+
+<body>
+
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">MachineLearning</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="concepts.html">MCQs</a>
+        <a class="mr-5 hover:text-gray-900" href="download.html">Download</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <section>
+    <div>
+      <p class="leading-relaxed text-base">
+
+      <h2><b class="heading">Random Forest...</b></h2> <br>
+      <br>
+
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200516180708/Capture482.png" alt=""> <br> <br>
+
+
+      <i> <b class="header"> Random Forest </b> is an ensemble technique capable of performing both regression and classification tasks with the use of
+        multiple decision trees and a technique called <b> Bootstrap </b> and <b> Aggregation </b> , commonly known as <b class="header"> bagging </b>. </i> The basic idea behind
+      this is to combine multiple decision trees in determining the final output rather than relying on individual decision trees. <br> <br>
+
+      <b> Ensembled algorithms </b>are those which combines more than one algorithms of same or different kind for classifying objects. <br> <br>
+
+      <img src="https://miro.medium.com/max/1148/0*a8KgF1IINziv7KIQ.png" alt=""> <br> <br>
+
+
+      Random Forest has multiple decision trees as base learning models. We randomly perform row sampling and feature sampling from
+      the dataset forming sample datasets for every model. This part is called <b> Bootstrap </b>. <br> <br> <br> <br>
+
+
+
+      <img src="http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1526467744/voting_dnjweq.jpg" alt=""> <br> <br>
+
+      <i> It technically is an ensemble method (based on the divide-and-conquer approach) of decision trees generated on a randomly
+        split dataset. This collection of decision tree classifiers is also known as the forest. <b> The individual decision trees are
+          generated using an attribute selection indicator such as information gain, gain ratio, and Gini index for each attribute. </b>
+        Each tree depends on an independent random sample. <br> <br> In a classification problem, each tree votes and the most popular class
+        is chosen as the final result. In the case of regression, the average of all the tree outputs is considered as the final result.
+        It is simpler and more powerful compared to the other non-linear classification algorithms. </i> <br> <br>
+
+
+
+
+      <b class="header"> Types of Random Forest models: </b> <br> <br>
+      <b> 1. Random Forest Prediction for a classification problem: </b>
+      f(x) = majority vote of all predicted classes over B trees <br> <br>
+      <b> 2. Random Forest Prediction for a regression problem: </b>
+      f(x) = sum of all sub-tree predictions divided over B trees <br> <br>
+
+      <b class="header"> Finding important features: </b> <br> <br>
+      Random forests also offers a good feature selection indicator. Scikit-learn provides an extra variable with
+      the model, which shows the relative importance or contribution of each feature in the prediction. It automatically
+      computes the relevance score of each feature in the training phase. Then it scales the relevance down so that the sum
+      of all scores is 1. <br> <br>
+
+      This score will help you choose the most important features and drop the least important ones for model building. <br> <br>
+
+      <i> <b> Random forest uses gini importance or mean decrease in impurity (MDI) to calculate the importance of each feature.
+          Gini importance is also known as the total decrease in node impurity.</b></i> This is how much the model fit or accuracy decreases
+      when you drop a variable. The larger the decrease, the more significant the variable is. Here, the mean decrease is a significant
+      parameter for variable selection. The Gini index can describe the overall explanatory power of the variables. <br> <br>
+
+      <br>
+      <b class="header"> Random Forests vs Decision Trees : </b> <br> <br>
+      1. Random forests is a set of multiple decision trees. <br>
+      2. Deep decision trees may suffer from overfitting, but random forests prevents overfitting by creating trees on random subsets. <br>
+      3. Decision trees are computationally faster. <br>
+      4. Random forests is difficult to interpret, while a decision tree is easily interpretable and can be converted to rules. <br>
+      <br> <br>
+
+      <b> <i> Tuning parameters used in Random Forest are :</i> </b> <br>
+      1. <b>n_estimators</b> : Number of trees in forest. Default is 10. <br>
+      2. <b>criterion</b>: “gini” or “entropy” same as decision tree classifier. <br>
+      3. <b>min_samples_split</b>: minimum number of working set size at node required to split. Default is 2. <br> <br>
+      <br>
+      <b class="header"> Features and Advantages of Random Forest : </b> <br> <br>
+      1. It is one of the most accurate learning algorithms available. For many data sets, it produces a highly accurate classifier. <br> <br>
+      2. It runs efficiently on large databases. <br> <br>
+      3. It can handle thousands of input variables without variable deletion. <br> <br>
+      4. It gives estimates of what variables that are important in the classification. <br> <br>
+      5. It generates an internal unbiased estimate of the generalization error as the forest building progresses. <br> <br>
+      6. It has an effective method for estimating missing data and maintains accuracy when a large proportion of the data are missing. <br> <br>
+      <br>
+      <b class="header"> Disadvantages: </b> <br> <br>
+      1. Random forests is slow in generating predictions because it has multiple decision trees. Whenever it makes a prediction, all the
+      trees in the forest have to make a prediction for the same given input and then perform voting on it. This whole process is time-consuming. <br> <br>
+      2. The model is difficult to interpret compared to a decision tree, where you can easily make a decision by following the path in the tree. <br> <br>
+
+      3. Random forests have been observed to overfit for some datasets with noisy classification/regression tasks. <br> <br>
+      4. For data including categorical variables with different number of levels, random forests are biased in favor of those
+      attributes with more levels. Therefore, the variable importance scores from random forest are not reliable for this type of data. <br> <br> <br>
+
+
+      </p>
+
+
+      <a class="text-indigo-500 inline-flex items-center mt-4" href="https://www.datacamp.com/community/tutorials/random-forests-classifier-python" target="_blank">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+      <br>
+      <a class="text-indigo-500 inline-flex items-center mt-4" href="https://medium.com/machine-learning-101/chapter-5-random-forest-classifier-56dc7425c3e1" target="_blank">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+      <br>
+      <a class="text-indigo-500 inline-flex items-center mt-4" href="https://towardsdatascience.com/random-forest-classification-and-its-implementation-d5d840dbead0" target="_blank">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+      <br>
+      <a class="text-indigo-500 inline-flex items-center mt-4" href="https://towardsdatascience.com/my-random-forest-classifier-cheat-sheet-in-python-fedb84f8cf4f" target="_blank">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+      <br>
+      <a class="text-indigo-500 inline-flex items-center mt-4" href="https://www.geeksforgeeks.org/random-forest-regression-in-python/" target="_blank">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+
+      <br> <br> <br> <br>
+
+    </div>
+  </section>
+
+
+
+
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">MachineLearning</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">A newly created site that talks about Machine Learning...</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_intro.html" target="_blank">ML Introduction</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623" target="_blank">ML Classifiers</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="binaryVSmulti.html" target="_blank">ML Classification</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="linear_regression.html" target="_blank">Linear Regression</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="logisticReg.html" target="_blank">Logistic Regression</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="decisionTree.html" target="_blank">Decision Tree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="leastSquare.html" target="_blank">Least Square Method</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="supportVector.html" target="_blank">Support Vector Machine</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="kMeansClustering.html" target="_blank">K-Means Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="discretization.html" target="_blank">Binning or Discretization</a>
+            </li>
+
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="naiveBayes.html" target="_blank">Naive Bayes Classifier</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="normalDistribution.html" target="_blank">Normal Distribution</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="confusionMatrix.html" target="_blank">Confusion Matrix</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="randomForest.html" target="_blank">Random Forest</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="gd.html" target="_blank">Gradient Descent</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-9">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_clustering.html" target="_blank">ML Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="clustering.html" target="_blank">More About Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ensemableLearning.html">Ensemable Learning Techniques</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/" target="_blank">Neural Networks</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="nlp.html" target="_blank">NLP Text Preprocessing</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Machine Learning —
+          <a rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">RupakDey</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/rupak.dey.94849/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+
+.heading {
+    font-size: 35px;;
+}
+
+section {
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+}
+section h1 {
+    margin-left: 290px;
+    font-size: 40px;
+}
+
+section h2 .heading {
+    font-size: 40px;
+}
+
+section div .header {
+    font-size: 22px;
+}

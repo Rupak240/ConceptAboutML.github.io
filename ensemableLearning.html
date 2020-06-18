@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ensemable.css">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <title>Ensemable Learning Techniques</title>
+</head>
+
+<body>
+
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">MachineLearning</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="concepts.html">MCQs</a>
+        <a class="mr-5 hover:text-gray-900" href="download.html">Download</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+  <section>
+    <div>
+      <p class="leading-relaxed text-base">
+
+      <h2><b class="heading">Ensemable Learning Techniques...</b></h2> <br> <br> <br>
+
+      <b class="header"> Ensemable Learning Methods : </b> <br> <br>
+
+      <i> Ensemble learning is a machine learning paradigm where multiple models (often called <b> “weak learners” </b>) are trained to solve the same problem and
+        combined to get better results. The main hypothesis is that when weak models are correctly combined we can obtain more accurate and robust models. </i>
+      <br> <br>
+
+      <b> A low bias and a low variance </b>, although they most often vary in opposite directions, are the two most fundamental features expected for a model.
+      Indeed, to be able to solve a problem, we want our model to have enough degrees of freedom to resolve the underlying complexity of the data we are
+      working with, but we also want it to have not too much degrees of freedom to avoid high variance and be more robust. This is the well known
+      <b class="header"> bias-variance tradeoff </b>. The following picture shows the Bias-varience tradeoff. <br> <br>
+      <img src="https://miro.medium.com/max/1400/1*kISLC1Udq0m6g5kwHhMuJg@2x.png" alt="" width="700" height="700"> <br> <br>
+
+      The idea of ensemble methods is to try reducing bias and/or variance of such weak learners by combining several of them together in order to create a <b>
+        strong learner (or ensemble model) </b> that achieves better performances. <br> <br>
+
+      <i> <b class="header">Introduction to Boosting : </b> </i> <br> <br>
+      <i> “Alone we can do so little and together we can do much” — Helen Keller </i> <br> <br>
+
+      <b> Bagging (stands for Bootstrap Aggregating): </b> It is an approach where you take random samples of data, build learning algorithms and
+      take simple means to find bagging probabilities. <i> Bagging </i>, that often considers homogeneous weak learners, learns them independently from each other
+      in parallel and combines them following some kind of deterministic averaging process. <br> <br>
+
+      <b> Boosting: </b> Boosting is similar, however the selection of sample is made more intelligently. We subsequently give more and more weight
+      to hard and classify observations. <i> Boosting </i>, that often considers homogeneous weak learners, learns them sequentially in a very adaptative way
+      and combines them following a deterministic strategy. <br> <br>
+
+      <i> <b>Boosting </b> is an ensemble learning technique that uses a set of Machine Learning algorithms to convert weak learner to strong learners in order
+        to increase the accuracy of the model.</i> <br> <br>
+      <br>
+      <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/06/What-Is-Boosting-Boosting-Machine-Learning-Edureka-min.png" alt="" height="800" width="800"> <br> <br>
+
+      <b> Stacking </b>, that often considers heterogeneous weak learners, learns them in parallel and combines them by training a meta-model to output
+      a prediction based on the different weak models predictions. <br> <br>
+
+      <b><i>We can say that bagging will mainly focus at getting an ensemble model with less variance than its components whereas boosting and
+          stacking will mainly try to produce strong models less biased than their components (even if variance can also be reduced).</i></b> <br> <br>
+
+      <b> Ensemble </b> is a machine learning concept in which multiple models are trained using the same learning algorithm. <b>Bagging</b> is a way to decrease
+      the variance in the prediction by generating additional data for training from dataset using combinations with repetitions to produce multi-sets
+      of the original data. <b>Boosting</b> is an iterative technique which adjusts the weight of an observation based on the last classification.
+      If an observation was classified incorrectly, it tries to increase the weight of this observation. Boosting in general builds strong predictive models.
+      Ensemble methods combine several decision trees classifiers to produce better predictive performance than a single decision tree classifier.
+      <b> The main principle behind the ensemble model is that a group of weak learners come together to form a strong learner,
+        thus increasing the accuracy of the model. </b> <br> <br>
+
+      <i> <b>Ensemble learning </b> is a method that is used to enhance the performance of Machine Learning model by combining several learners. When compared
+        to a single model, this type of learning builds models with improved efficiency and accuracy. This is exactly why ensemble methods are used
+        to win market leading competitions such as the Netflix recommendation competition, Kaggle competitions and so on.</i>
+      <br> <br> <br>
+
+      <img src="https://miro.medium.com/max/1038/0*yMbDVA-mPWvzFXCM.PNG" alt=""> <br> <br>
+
+      <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/06/What-Is-Ensemble-Learning-Boosting-Machine-Learning-Edureka.png" alt=""> <br> <br>
+
+
+      <b class="header"><i>Boosting vs Bagging : </i></b>
+      Ensemble learning can be performed in two ways: <br> <br>
+
+      <i> <b>Sequential ensemble, popularly known as boosting,</b> here the weak learners are sequentially produced during the training phase. The performance of the
+        model is improved by assigning a higher weightage to the previous, incorrectly classified samples. <b> An example of boosting is the AdaBoost algorithm. </b> <br> <br>
+
+        <b>Parallel ensemble, popularly known as bagging,</b> here the weak learners are produced parallelly during the training phase. The performance of the model can
+        be increased by parallelly training a number of weak learners on bootstrapped data sets. <b> An example of bagging is the Random Forest algorithm. </b> </i> <br> <br>
+
+
+      <b> <i> There are multiple boosting algorithms like AdaBoost, Gradient Boosting, XGBoost, etc. Every algorithm has its own
+          underlying mathematics and a slight variation is observed while applying them. </i> </b> <br> <br> <br>
+
+
+      <b class="header"><i>AdaBoost (Adaptive Boosting) : </i></b> <br> <br>
+      AdaBoost combines multiple weak learners into a single strong learner. The weak learners in AdaBoost are decision trees with
+      a single split, called <b> decision stumps </b>. When AdaBoost creates its first decision stump, all observations are weighted
+      equally. To correct the previous error, the observations that were incorrectly classified now carry more weight than
+      the observations that were correctly classified. AdaBoost algorithms can be used for both classification and regression problem. <br> <br>
+
+      The diagram shown below, aptly explains AdaBoost. <br> <br>
+
+      <img src="https://miro.medium.com/max/1400/0*OZq2wEkNjMmP4wKj.png" alt="" height="600" width="600"> <br> <br> <br>
+
+      <b><i>Advantages of AdaBoost : </i></b> <br> <br>
+      1. Can be used with many different classifiers <br>
+      2. Improves classification accuracy <br>
+      3. Commonly used in many areas <br>
+      4. Simple to implement <br>
+      5. Does feature selection resulting in relatively simple classifier <br>
+      6. Not prone to overfitting <br>
+      7. Fairly good generalization <br> <br>
+      <b><i>Disadvantages of AdaBoost :</i></b> <br> <br>
+      1. The drawback of AdaBoost is that it is easily defeated by noisy data, the efficiency of the algorithm is highly affected
+      by outliers as the algorithm tries to fit every point perfectly. <br>
+      2. Even though this algorithm tries to fit every point, it doesn’t overfit. <br>
+      3. Suboptimal solution <br> <br> <br> <br>
+
+
+      <b class="header"><i>Gradient Boosting : </i></b> <br> <br>
+      Just like AdaBoost, <b>Gradient Boosting</b> works by sequentially adding predictors to an ensemble, each one correcting its
+      predecessor. However, instead of changing the weights for every incorrect classified observation at every iteration like
+      AdaBoost, <b> Gradient Boosting method tries to fit the new predictor to the residual errors made by the previous predictor. </b>
+      Gradient boosting is a machine learning technique for regression and classification problems, which produces a prediction model
+      in the form of an ensemble of weak prediction models, typically decision trees. The objective of any supervised learning algorithm
+      is to define a loss function and minimize it. <br> <br>
+
+      In <b>Gradient Boosting Machine (GBM)</b>, we take up a weak learner and at each step, we add another weak learner to increase the
+      performance and build a strong learner. This reduces the loss of the loss function. We iteratively add each model and compute the
+      loss. The loss represents the error residuals (the difference between actual value and predicted value) and using this loss value
+      the predictions are updated to minimise the residuals. <br> <br>
+
+      Gradient Boosting is also based on sequential ensemble learning. Here the base learners are generated sequentially in such a way that the present
+      base learner is always more effective than the previous one, i.e. the overall model improves sequentially with each iteration. <br> <br>
+
+      The difference in this type of boosting is that the weights for misclassified outcomes are not incremented, instead, Gradient Boosting
+      method tries to optimize the loss function of the previous learner by adding a new model that adds weak learners in order to reduce the loss function. <br> <br>
+
+      The main idea here is to overcome the errors in the previous learner’s predictions. This type of boosting has three main components:
+
+      1. Loss function that needs to be ameliorated. <br>
+
+      2. Weak learner for computing predictions and forming strong learners. <br>
+
+      3. An Additive Model that will regularize the loss function. <br> <br> <br>
+
+      <b><i>GBM is the most widely used algorithm.</i></b> <br> <br>
+
+      <img src="https://miro.medium.com/max/1400/0*ia87Sc5LIU0GsvL_.jpg" alt="" height="600" width="600"> <br> <br>
+
+      <b><i>Advantages of GBM : </i></b> <br> <br>
+      1. Often provides predictive accuracy that cannot be beat. <br>
+      2. Lots of flexibility — can optimize on different loss functions and provides several hyper-parameter tuning options that make
+      the function fit very flexible. <br>
+      3. No data pre-processing required — often works great with categorical and numerical values as is. <br>
+      4. Handles missing data — imputation not required. <br> <br> <br>
+
+
+      <b><i>Disadvantages of GBM : </i></b> <br> <br>
+      1. GBMs will continue improving to minimize all errors. This can overemphasize outliers and cause overfitting. Must use
+      cross-validation to neutralize. <br>
+      2. Computationally expensive — GBMs often require many trees (>1000) which can be time and memory exhaustive. <br>
+      3. The high flexibility results in many parameters that interact and influence heavily the behavior of the approach (number
+      of iterations, tree depth, regularization parameters, etc.). This requires a large grid search during tuning. <br>
+      4. Less interpretable although this is easily addressed with various tools (variable importance, partial dependence plots, LIME, etc.). <br> <br> <br>
+
+      <b class="header"><i>XGBoost : </i></b> <br> <br>
+      <b>XGBoost</b> stands for <b> eXtreme Gradient Boosting </b> and is another faster version of boosting learner.
+      XGBoost is an implementation of gradient boosted decision trees designed for peed and performance. Gradient boosting machines
+      are generally very slow in implementation because of sequential model training. Hence, they are not very scalable.
+      Thus, XGBoost is focused on computational speed and model performance. <br> <br>
+
+      The main aim of this algorithm is to increase the speed and efficiency of computation. The Gradient Descent Boosting algorithm computes
+      the output at a slower rate since they sequentially analyze the data set, therefore <b> XGBoost is used to boost or extremely boost the performance of the model </b>.
+      <br> <br>
+
+      <b> XGBoost provides:</b> <br>
+      1. Parallelization of tree construction using all of your CPU cores during training. <br>
+      2. Distributed Computing for training very large models using a cluster of machines. <br>
+      3. Out-of-Core Computing for very large datasets that don’t fit into memory. <br>
+      4. Cache Optimization of data structures and algorithm to make the best use of hardware. <br>
+      5. XGBoost is similar to gradient boosting algorithm but it has a few tricks up its sleeve which makes it stand out from the rest. <br> <br> <br>
+
+      <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/06/XGBoost-Boosting-Machine-Learning-Edureka-min.png" width="700" height="500"> <br> <br>
+      <br>
+      <img src="https://miro.medium.com/max/1276/0*_Q83k4fCiNtbk9nM" alt=""> <br> <br> <br>
+
+      <b><i>Features of XGBoost are : </i></b> <br>
+      1. Clever Penalisation of Trees <br>
+      2. A Proportional shrinking of leaf nodes <br>
+      3. Newton Boosting <br>
+      4. Extra Randomisation Parameter <br> <br> <br>
+
+      <img src="https://miro.medium.com/max/308/0*zDtXhWSPPCgPFhVN" alt=""> <br> <br> <br>
+
+      <b><i>XGBoost is faster than gradient boosting but gradient boosting has a wide range of application.</i></b> <br> <br> <br>
+
+      <b class="header"><i>Advantages of XGBoost : </i></b> <br> <br>
+      1. <b>Regularization : </b> Standard GBM implementation has no regularization like XGBoost, therefore it also helps to reduce overfitting.
+      Thats why, XGBoost is also known as regularized boosting technique. <br> <br>
+      2. <b>Parallel Processing : </b> XGBoost implements parallel processing and is blazingly faster as compared to GBM. XGBoost also supports implementation on Hadoop. <br> <br>
+      3. <b>High Flexibility : </b> XGBoost allow users to define custom optimization objectives and evaluation criteria. <br> <br>
+      4. <b>Handling Missing Values : </b> XGBoost has an in-built routine to handle missing values. <br> <br>
+      5. <b>Tree Pruning : </b> XGBoost make splits upto the max_depth specified and then start pruning the tree backwards and remove splits beyond which there is no positive gain. <br> <br>
+      6. <b>Built-in Cross-Validation : </b> XGBoost allows user to run a cross-validation at each iteration of the boosting process and thus it is easy to get the exact
+      optimum number of boosting iterations in a single run. <br> <br> <br>
+
+      <i> Ensemble methods are learning models that achieve performance by combining the opinions of multiple learners. Typically, an ensemble model is a
+        supervised learning technique for combining multiple weak learners or models to produce a strong learner with the concept of Bagging and Boosting
+        for data sampling. Ensemble method is a combination of multiple models, that helps to improve the generalization errors which might not be handled
+        by a single modeling approach. </i> <br> <br> <br>
+      </p>
+    </div>
+
+    <a class="text-indigo-500 inline-flex items-center mt-4" href="https://towardsdatascience.com/ensemble-methods-bagging-boosting-and-stacking-c9214a10a205" target="_blank">Learn More
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </a>
+    <br> <br>
+    <a class="text-indigo-500 inline-flex items-center mt-4" href="https://medium.com/greyatom/boosting-ce84639a805d" target="_blank">Learn More
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </a>
+    <br> <br>
+
+    <a class="text-indigo-500 inline-flex items-center mt-4" href="https://www.edureka.co/blog/boosting-machine-learning/" target="_blank">Learn More
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </a>
+
+
+
+  </section>
+
+  <br> <br> <br> <br>
+
+
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">MachineLearning</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">A newly created site that talks about Machine Learning...</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_intro.html" target="_blank">ML Introduction</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623" target="_blank">ML Classifiers</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="binaryVSmulti.html" target="_blank">ML Classification</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="linear_regression.html" target="_blank">Linear Regression</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="logisticReg.html" target="_blank">Logistic Regression</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="decisionTree.html" target="_blank">Decision Tree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="leastSquare.html" target="_blank">Least Square Method</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="supportVector.html" target="_blank">Support Vector Machine</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="kMeansClustering.html" target="_blank">K-Means Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="discretization.html" target="_blank">Binning or Discretization</a>
+            </li>
+
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="naiveBayes.html" target="_blank">Naive Bayes Classifier</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="normalDistribution.html" target="_blank">Normal Distribution</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="confusionMatrix.html" target="_blank">Confusion Matrix</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="randomForest.html" target="_blank">Random Forest</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="gd.html" target="_blank">Gradient Descent</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-9">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_clustering.html" target="_blank">ML Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="clustering.html" target="_blank">More About Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ensemableLearning.html">Ensemable Learning Techniques</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/" target="_blank">Neural Networks</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="nlp.html" target="_blank">NLP Text Preprocessing</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Machine Learning —
+          <a rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">RupakDey</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/rupak.dey.94849/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>

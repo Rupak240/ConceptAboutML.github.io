@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ensemable.css">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <title>Gradient Descent</title>
+</head>
+
+<body>
+
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">MachineLearning</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="concepts.html">MCQs</a>
+        <a class="mr-5 hover:text-gray-900" href="download.html">Download</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+  <section>
+    <div>
+      <p class="leading-relaxed text-base">
+
+        <b class="header"> Gradient Descent : </b> <br> <br>
+
+        <i> <b> Gradient descent is a first-order iterative optimization algorithm for finding the minimum of a function. </b> </i> <br> <br>
+
+        <b> Gradient Descent </b> is a popular optimization technique in Machine Learning and Deep Learning, and it can be used with most
+        of the learning algorithms. A gradient is the slope of a function. It measures the degree of change of a variable in response
+        to the changes of another variable. Mathematically, Gradient Descent is a convex function whose output is the partial derivative
+        of a set of parameters of its inputs. The greater the gradient, the steeper the slope. <br> <br>
+
+        Starting from an initial value, <i> Gradient Descent is run iteratively to find the optimal values of the parameters to <b class="header"> find the minimum
+            possible value of the given cost function </b>. </i> <br> <br>
+
+        <img src="https://miro.medium.com/max/1400/1*P7z2BKhd0R-9uyn9ThDasA.png" alt="" height="500" width="500"> <br> <br>
+
+        Typically, there are three types of Gradient Descent: <br> <br>
+
+        <b> 1. Batch Gradient Descent <br>
+          2. Stochastic Gradient Descent <br>
+          3. Mini-batch Gradient Descent <br> <br></b> <br> <br>
+
+
+        <b class="header"><i>Batch Gradient Descent : </i></b> <br> <br>
+        In Batch Gradient Descent, all the training data is taken into consideration to take a single step. We take the average of
+        the gradients of all the training examples and then use that mean gradient to update our parameters. So that’s just one step
+        of gradient descent in one epoch. <br> <br>
+        Batch Gradient Descent is great for convex or relatively smooth error manifolds. In this case, we move somewhat directly
+        towards an optimum solution. <br> <br> <br>
+
+        <img src="https://miro.medium.com/max/1176/1*44QbDJ9gJvw8tXtHNVLoCA.png" alt="" width="500" height="500"> <br> <br>
+
+        The graph of cost vs epochs is also quite smooth because we are averaging over all the gradients of training data
+        for a single step. The cost keeps on decreasing over the epochs. <br> <br> <br>
+
+
+
+        <b class="header">Stochastic Gradient Descent : </b> <br> <br>
+        In Batch Gradient Descent, we were considering all the samples of the datasets for every step of Gradient Descent. But if our dataset is very huge, this technique does not seem an an efficient way.
+        To tackle this problem, we have <b> Stochastic Gradient Descent </b>, where a few samples are selected randomly instead of the whole dataset for each iteration.
+        <br> <br>
+        Now if we drive in more detailed info, in <b>Gradient Descent</b>, there is a term called <b><i>batch</i></b>, which denotes the total number of samples from a dataset that is used for calculating the gradient for each iteration. As said
+        earlier, in typical Gradient Desecnt optimization, like Batch Gradient Descent, the batch is taken to be the whole dataset.
+        Although, using the whole dataset is really useful for getting to the minima in a less noisy and rendom manner, but the problem arises when our datasets gets big, BGD seems to be an unefficient technique here, performing each iteration on
+        whole dataset of millions until the minina is reached, definitely it becomes very much expensive to perform.<br> <br>
+
+
+        This problem is solved by <b><i>Stochastic Gradient Descent(SGD)</i></b>. In SGD, it uses only a single sample, i.e., a batch size of one, to perform each iteration. The sample is randomly shuffled and selected for performing the iteration.
+        <br> <br>
+
+        In SGD, since only one sample from the dataset is chosen at random for
+        each iteration, the path taken by the algorithm to reach the minima is
+        usually noisier than your typical Gradient Descent algorithm. But that
+        doesn’t matter as long as we reach the minima and with significantly shorter
+        training time by using <b><i>SGD</i></b>. <br> <br> <br>
+
+        <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/12/stochastic.png" alt="" width="400" height="400"> <br> <br>
+
+        <br>
+        Path taken by Batch Gradient Descent : <br>
+
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/gdp.png" alt="" width="300" height="300"> <br> <br> <br>
+
+        Path taken by Stochastic Gradient Descent : <br>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/sgd-1.jpg" alt="" width="300" height="300"> <br> <br>
+
+        There is a small limitation with SGD, that is SGD is generally noisier than
+        typical Gradient Descent (GD), it usually took a higher number of iterations
+        to reach the minima, because of its randomness in its descent.
+        Even though it requires a higher number of iterations to reach
+        the minima than typical Gradient Descent, it is still computationally
+        much less expensive than typical Gradient Descent. Hence, in most
+        scenarios, SGD is preferred over Batch Gradient Descent for
+        optimizing a learning algorithm. <br> <br>
+
+        <img src="https://miro.medium.com/max/243/1*JugKARhlrp9HLTF5_lN7EQ.jpeg" alt=""> <br> <br>
+
+        <b><i>This cycle of taking the values and adjusting them based on
+            different parameters in order to reduce the loss function is
+            called <b class="header"> back-propagation </b>.</i></b> <br> <br> <br> <br>
+
+        <b class="header">Mini Batch Gradient Descent : </b> <br> <br>
+
+        Batch Gradient Descent can be used for smoother curves. SGD can be used when the dataset is large. Batch Gradient Descent converges directly to minima. SGD converges faster for larger datasets. But, since in SGD we use only one example at a
+        time, we cannot implement the vectorized implementation on it. This can slow down the computations. To tackle this problem, a mixture of Batch Gradient Descent and SGD is used.
+
+        <br> <br>
+
+        Here, we use neither all the dataset at once nor we use the single example at a time. We use a batch of a fixed number of training examples which is less than the actual dataset and call it a <b><i>mini-batch</i></b>. <br> <br>
+
+        So, when we are using the mini-batch gradient descent we are updating our parameters frequently as well as we can use vectorized implementation for faster computations. <br> <br> <br>
+
+
+        <a class="text-indigo-500 inline-flex items-center mt-4" href="https://towardsdatascience.com/batch-mini-batch-stochastic-gradient-descent-7a62ecba642a" target="_blank">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+
+      </p>
+
+
+    </div>
+
+    <br> <br> <br> <br>
+  </section>
+
+
+
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">MachineLearning</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">A newly created site that talks about Machine Learning...</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_intro.html" target="_blank">ML Introduction</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623" target="_blank">ML Classifiers</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="binaryVSmulti.html" target="_blank">ML Classification</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="linear_regression.html" target="_blank">Linear Regression</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="logisticReg.html" target="_blank">Logistic Regression</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="decisionTree.html" target="_blank">Decision Tree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="leastSquare.html" target="_blank">Least Square Method</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="supportVector.html" target="_blank">Support Vector Machine</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="kMeansClustering.html" target="_blank">K-Means Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="discretization.html" target="_blank">Binning or Discretization</a>
+            </li>
+
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="naiveBayes.html" target="_blank">Naive Bayes Classifier</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="normalDistribution.html" target="_blank">Normal Distribution</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="confusionMatrix.html" target="_blank">Confusion Matrix</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="randomForest.html" target="_blank">Random Forest</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="gd.html" target="_blank">Gradient Descent</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-9">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_clustering.html" target="_blank">ML Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="clustering.html" target="_blank">More About Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ensemableLearning.html">Ensemable Learning Techniques</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/" target="_blank">Neural Networks</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="nlp.html" target="_blank">NLP Text Preprocessing</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Machine Learning —
+          <a rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">RupakDey</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/rupak.dey.94849/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>

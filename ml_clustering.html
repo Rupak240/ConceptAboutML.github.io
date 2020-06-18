@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ml_clustering.css">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <title>MachineLearning Clustering</title>
+</head>
+
+<body>
+
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">MachineLearning</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="concepts.html">MCQs</a>
+        <a class="mr-5 hover:text-gray-900" href="download.html">Download</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+  <section>
+    <h2> <b class="heading"> Introduction to Clustering...</b> </h2>
+    <div>
+
+      <p class="leading-relaxed text-base">
+        <br> <br>
+        It is basically a type of unsupervised learning method . An unsupervised learning method is a method in which we draw references
+        from datasets consisting of input data without labelled responses. Generally, it is used as a process to find meaningful structure,
+        explanatory underlying processes, generative features, and groupings inherent in a set of examples. <br> <br>
+        <b>Clustering</b> is the task of dividing the population or data points into a number of groups such that data points in the same groups are more
+        similar to other data points in the same group and dissimilar to the data points in other groups. It is basically a collection of objects
+        on the basis of similarity and dissimilarity between them. <br> <br>
+
+        For example– The data points in the graph below clustered together can be classified into one single group. We can distinguish the clusters,
+        and we can identify that there are 3 clusters in the below picture. <br> <br>
+
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/merge3cluster.jpg" alt="" width="700" height="900"> <br> <br>
+
+        <b> It is not necessary for clusters to be a spherical. Such as :</b> <br> <br>
+
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/clusteringg.jpg" alt="" height="600" width="500"> <br>
+
+        <b> DBSCAN: Density-based Spatial Clustering of Applications with Noise </b> <br>
+        These data points are clustered by using the basic concept that the data point lies within the given constraint from the cluster centre.
+        Various distance methods and techniques are used for calculation of the outliers. <br> <br>
+
+        <b class="header"> Why Clustering ? </b> <br>
+        Clustering is very much important as it determines the intrinsic grouping among the unlabeled data present. There are no criteria for a good clustering.
+        It depends on the user, what is the criteria they may use which satisfy their need. For instance, we could be interested in finding representatives
+        for homogeneous groups (data reduction), in finding “natural clusters” and describe their unknown properties (“natural” data types), in finding
+        useful and suitable groupings (“useful” data classes) or in finding unusual data objects (outlier detection). This algorithm must make some
+        assumptions which constitute the similarity of points and each assumption make different and equally valid clusters. <br> <br>
+
+        <b class="header"> Clustering Methods : </b> <br> <br>
+
+        <b> 1. Density-Based Methods :</b> These methods consider the clusters as the dense region having some similarity and different from the lower dense region
+        of the space. These methods have good accuracy and ability to merge two clusters.Examples are <i> DBSCAN (Density-Based Spatial Clustering of Applications with
+          Noise) , OPTICS (Ordering Points to Identify Clustering Structure) </i> etc. <br> <br>
+        <b> 2. Hierarchical Based Methods : </b>The clusters formed in this method forms a tree-type structure based on the hierarchy. New clusters are formed
+        using the previously formed one. It is divided into two category -- <br>
+        <b>Agglomerative</b> <i> (bottom up approach) </i> or, <b> hierarchical agglomerative clustering (HAC) </b> <br>
+        <b>Divisive</b> <i> (top down approach) </i> <br>
+        examples <i> CURE (Clustering Using Representatives), BIRCH (Balanced Iterative Reducing Clustering and using Hierarchies) </i> etc. <br> <br>
+
+        <b>3. Partitioning Methods :</b> These methods partition the objects into k clusters and each partition forms one cluster. This method is used
+        to optimize an objective criterion similarity function such as when the distance is a major parameter example: <i> K-means, CLARANS (Clustering Large
+          Applications based upon Randomized Search) </i> etc. <br> <br>
+        <b> 4. Grid-based Methods : </b> In this method the data space is formulated into a finite number of cells that form a grid-like structure. All the
+        clustering operation done on these grids are fast and independent of the number of data objects examples <i> STING (Statistical Information Grid), wave
+          cluster, CLIQUE (CLustering In Quest) </i> etc. <br> <br>
+
+
+        <b class="header"> Clustering Algorithms : </b> <br> <br>
+
+        <b> <a href="">K-means clustering algorithm</a> </b> – It is the simplest unsupervised learning algorithm that solves clustering problem.K-means algorithm
+        partition n observations into k clusters where each observation belongs to the cluster with the nearest mean serving as a prototype of the cluster . <br> <br>
+
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/k-means-copy.jpg" height="600" width="600"> <br> <br>
+
+        <b> <i> Applications of Clustering in different fields: </i> <br>
+
+          Marketing </b>: It can be used to characterize & discover customer segments for marketing purposes. <br>
+        <b>Biology</b> : It can be used for classification among different species of plants and animals. <br>
+        <b>Libraries</b> : It is used in clustering different books on the basis of topics and information. <br>
+        <b>Insurance</b> : It is used to acknowledge the customers, their policies and identifying the frauds. <br>
+        <b>City Planning</b>: It is used to make groups of houses and to study their values based on their geographical locations and other factors present. <br>
+        <b>Earthquake studies</b>: By learning the earthquake-affected areas we can determine the dangerous zones. <br> <br>
+
+
+        <a class="text-indigo-500 inline-flex items-center mt-4" href="https://www.geeksforgeeks.org/k-means-clustering-introduction/" target="_blank">KNN Alogorithm
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a></a>
+
+      </p>
+
+
+    </div>
+  </section>
+
+
+
+
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">MachineLearning</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">A newly created site that talks about Machine Learning...</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_intro.html" target="_blank">ML Introduction</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623" target="_blank">ML Classifiers</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="binaryVSmulti.html" target="_blank">ML Classification</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="linear_regression.html" target="_blank">Linear Regression</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="logisticReg.html" target="_blank">Logistic Regression</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="decisionTree.html" target="_blank">Decision Tree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="leastSquare.html" target="_blank">Least Square Method</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="supportVector.html" target="_blank">Support Vector Machine</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="kMeansClustering.html" target="_blank">K-Means Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="discretization.html" target="_blank">Binning or Discretization</a>
+            </li>
+
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="naiveBayes.html" target="_blank">Naive Bayes Classifier</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="normalDistribution.html" target="_blank">Normal Distribution</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="confusionMatrix.html" target="_blank">Confusion Matrix</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="randomForest.html" target="_blank">Random Forest</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="gd.html" target="_blank">Gradient Descent</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-9">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_clustering.html" target="_blank">ML Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="clustering.html" target="_blank">More About Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ensemableLearning.html">Ensemable Learning Techniques</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/" target="_blank">Neural Networks</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="nlp.html" target="_blank">NLP Text Preprocessing</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Machine Learning —
+          <a rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">RupakDey</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/rupak.dey.94849/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>

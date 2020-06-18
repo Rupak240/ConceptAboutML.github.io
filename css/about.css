@@ -1,0 +1,19 @@
+
+section img {
+    margin-left: 250px;
+    margin-right: 100px;
+    position: relative;
+    width: 550px;
+    height: 600px;
+}
+
+section {
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+}
+section h1 {
+    margin-left: 290px;
+    font-size: 40px;
+}

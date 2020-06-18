@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ensemable.css">
+  <link rel="icon" type="image/png" href="images/Logo.png" %}">
+  <title>ML MCQs</title>
+</head>
+
+<body>
+
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">MachineLearning</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="concepts.html">MCQs</a>
+        <a class="mr-5 hover:text-gray-900" href="download.html">Download</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div>
+      <p class="leading-relaxed text-base">
+
+        <b>1. Which of the following is a widely used and effective machine learning algorithm based on the idea of bagging?</b><br>
+        a. Decision Tree <br>
+        b. Regression <br>
+        c. Classification <br>
+        <i> <b>d. Random Forest </b> </i> <br> <br>
+        <b>2. To find the minimum or the maximum of a function, we set the gradient to zero because:</b> <br>
+        <i> <b>a. The value of the gradient at extrema of a function is always zero </b> </i> <br>
+        b. Depends on the type of problem <br>
+        c. Both A and B <br>
+        d. None of the above <br> <br>
+        <b> 3. The most widely used metrics and tools to assess a classification model are: </b> <br>
+        a. Confusion matrix <br>
+        b. Cost-sensitive accuracy <br>
+        c. Area under the ROC curve <br>
+        <i> <b>d. All of the above </b> </i> <br> <br>
+        <b> 4. Which of the following is a good test dataset characteristic? </b> <br>
+        a. Large enough to yield meaningful results <br>
+        b. Is representative of the dataset as a whole <br>
+        <i> <b>c. Both A and B </b> </i> <br>
+        d. None of the above <br> <br>
+        <b>5. Which of the following is a disadvantage of decision trees?</b> <br>
+        a. Factor analysis <br>
+        b. Decision trees are robust to outliers <br>
+        <i> <b> c. Decision trees are prone to be overfit </b> </i> <br>
+        d. None of the above <br> <br>
+
+
+        <b> 6. How do you handle missing or corrupted data in a dataset? </b> <br>
+        a. Drop missing rows or columns<br>
+        b. Replace missing values with mean/median/mode<br>
+        c. Assign a unique category to missing values<br>
+        <i> <b> d. All of the above </b> </i> <br> <br>
+        <b> 7. What is the purpose of performing cross-validation? </b> <br>
+        a. To assess the predictive performance of the models<br>
+        b. To judge how the trained model performs outside the sample on test data<br>
+        <i> <b> c. Both A and B </b> </i> <br> <br>
+        <b> 8. Why is second order differencing in time series needed? </b><br>
+        a. To remove stationarity<br>
+        b. To find the maxima or minima at the local point<br>
+        <i> <b> c. Both A and B </b> </i> <br>
+        d. None of the above<br> <br>
+        <b> 9. When performing regression or classification, which of the following is the correct way to preprocess the data? </b><br>
+        <i> <b> a. Normalize the data → PCA → training </b> </i> <br>
+        b. PCA → normalize PCA output → training <br>
+        c. Normalize the data → PCA → normalize PCA output → training <br>
+        d. None of the above <br> <br>
+        <b> 10. Which of the folllowing is an example of feature extraction? </b> <br>
+        a. Constructing bag of words vector from an email <br>
+        b. Applying PCA projects to a large high-dimensional data <br>
+        c. Removing stopwords in a sentence <br>
+        <i> <b> d. All of the above </b> </i> <br> <br>
+        <b> 11. What is pca.components in Sklearn? </b> <br>
+        <i> <b> a. Set of all eigen vectors for the projection space </b> </i> <br>
+        b. Matrix of principal components <br>
+        c. Result of the multiplication matrix <br>
+        d. None of the above options <br> <br>
+        <b> 12. Which of the following is true about Naive Bayes ? </b> <br>
+        a. Assumes that all the features in a dataset are equally important <br>
+        b. Assumes that all the features in a dataset are independent <br>
+        <i> <b> c. Both A and B </b> </i> <br>
+        d. None of the above options <br> <br>
+        <b> 13. Which of the following statements about regularization is not correct? </b> <br>
+        a. Using too large a value of lambda can cause your hypothesis to underfit the data. <br>
+        b. Using too large a value of lambda can cause your hypothesis to overfit the data. <br>
+        c. Using a very large value of lambda cannot hurt the performance of your hypothesis. <br>
+        <i> <b> d. None of the above </b> </i> <br> <br>
+        <b> 14. How can you prevent a clustering algorithm from getting stuck in bad local optima? </b> <br>
+        a. Set the same seed value for each run <br>
+        <i> <b>b. Use multiple random initializations</> </b> </i> <br>
+        c. Both A and B <br>
+        d. None of the above <br> <br>
+        <b> 15. Which of the following techniques can be used for normalization in text mining? </b> <br>
+        a. Stemming <br>
+        b. Lemmatization <br>
+        c. Stop Word Removal <br>
+        <i> <b>d. Both A and B </b> </i> <br> <br>
+        <b> 16. In which of the following cases will K-means clustering fail to give good results? </b> <br>
+        <i> 1) Data points with outliers <br>
+          2) Data points with different densities <br>
+          3) Data points with non convex shapes <br> </i>
+        a. 1 and 2 <br>
+        b. 2 and 3 <br>
+        <i> <b>c. 1, 2, and 3 </b> </i> <br>
+        d. 1 and 3 <br> <br>
+        <b> 17. Which of the following is a reasonable way to select the number of principal components "k"? </b> <br>
+        <i> <b> a. Choose k to be the smallest value so that at least 99% of the varinace is retained. </b> </i> <br>
+        b. Choose k to be 99% of m (k = 0.99*m, rounded to the nearest integer). <br>
+        c. Choose k to be the largest value so that 99% of the variance is retained. <br>
+        d. Use the elbow method <br> <br>
+        <b> 18. You run gradient descent for 15 iterations with a=0.3 and compute J(theta) after each iteration. You find that the value of J(Theta) decreases quickly and then levels off. Based on this, which of the following conclusions seems most
+          plausible? </b> <br>
+        a. Rather than using the current value of a, use a larger value of a (say a=1.0) <br>
+        b. Rather than using the current value of a, use a smaller value of a (say a=0.1) <br>
+        <i> <b>c. a=0.3 is an effective choice of learning rate </b> </i> <br>
+        d. None of the above <br> <br>
+        <b> 19. What is a sentence parser typically used for? </b> <br>
+        a. It is used to parse sentences to check if they are utf-8 compliant. <br>
+        <i> <b>b. It is used to parse sentences to derive their most likely syntax tree structures.</b> </i> <br>
+        c. It is used to parse sentences to assign POS tags to all tokens. <br>
+        d. It is used to check if sentences can be parsed into meaningful tokens. <br> <br>
+        <b> 20. Suppose you have trained a logistic regression classifier and it outputs a new example x with a prediction ho(x) = 0.2. This means </b> <br>
+        a. Our estimate for P(y=1 | x) <br>
+        <i> <b> b. Our estimate for P(y=0 | x)</b> </i> <br>
+        c. Our estimate for P(y=1 | x) <br>
+        d. Our estimate for P(y=0 | x) <br> <br>
+
+
+
+
+
+
+        <b> 21. Which of the following clustering type has characteristic shown in the below figure? </b> <br> <br>
+        <img src="https://www.sanfoundry.com/wp-content/uploads/2015/10/data-science-questions-answers-clustering-q1.png" alt=""> <br>
+        a) Partitional <br>
+        <i> <b>b) Hierarchical</b> </i> <br>
+        c) Naive bayes <br>
+        d) None of the mentioned <br>
+        <i> <b> Explanation: Hierarchical clustering groups data over a variety of scales by creating a cluster tree or dendrogram. </b> </i> <br> <br>
+        <b> 22. Hierarchical clustering is an agglomerative approach & K-means clustering follows partitioning approach. <br> <br>
+
+          <i> 23. Hierarchical clustering is deterministic & K-means is not deterministic. </i> </b> <br> <br>
+
+
+
+        <b> 24. The process of forming general concept definitions from examples of concepts to be learned. </b> <br>
+        A. Deduction <br>
+        B. abduction <br>
+        <i> <b>C. induction</b> </i> <br>
+        D. conjunction <br> <br>
+        <b> 25. Computers are best at learning </b> <br>
+        <i> <b>A. facts.</b> </i> <br>
+        B. concepts. <br>
+        C. procedures. <br>
+        D. principles. <br> <br>
+        <b> 26. Data used to build a data mining model. </b> <br>
+        A. validation data <br>
+        <i> <b>B. training data</b> </i> <br>
+        C. test data <br>
+        D. hidden data <br> <br>
+        <b> 27. Supervised learning and unsupervised clustering both require at least one </b> <br>
+        <i> <b>A. hidden attribute.</b> </i> <br>
+        B. output attribute. <br>
+        C. input attribute. <br>
+        D. categorical attribute. <br> <br>
+        <b> 28. Supervised learning differs from unsupervised clustering in that supervised learning requires </b> <br>
+        A. at least one input attribute. <br>
+        <i> <b>B. input attributes to be categorical.</b> </i> <br>
+        C. at least one output attribute. <br>
+        D. ouput attriubutes to be categorical. <br> <br>
+
+        <b> 29. A regression model in which more than one independent variable is used to predict the dependent variable is called </b> <br>
+        A. a simple linear regression model <br>
+        B. a multiple regression models <br>
+        <i> <b>C. an independent model</b> </i> <br>
+        D. none of the above <br> <br>
+
+        <b> 30. A term used to describe the case when the independent variables in a multiple regression model are correlated is </b> <br>
+        A. regression <br>
+        B. correlation <br>
+        <i> <b> C. multicollinearity</b> </i> <br>
+        D. none of the above <br> <br>
+
+        <b> 31. A multiple regression model has the form: y = 2 + 3x1 + 4x2. As x1 increases by 1 unit (holding x2 constant), y will </b> <br>
+        A. increase by 3 units <br>
+        B. decrease by 3 units <br>
+        <i> <b>C. increase by 4 units</b> </i> <br>
+        D. decrease by 4 units <br> <br>
+
+        <b>32. A multiple regression model has</b> <br>
+        A. only one independent variable <br>
+        <i> <b>B. more than one dependent variable</b> </i> <br>
+        C. more than one independent variable <br>
+        D. none of the above <br> <br>
+
+        <b>33. A measure of goodness of fit for the estimated regression equation is the</b> <br>
+        A. multiple coefficient of determination <br>
+        B. mean square due to error <br>
+        <i> <b>C. mean square due to regression</b> </i> <br>
+        D. none of the above <br> <br>
+
+        <b>34. The adjusted multiple coefficient of determination accounts for</b> <br>
+        A. the number of dependent variables in the model <br>
+        B. the number of independent variables in the model <br>
+        C. unusually large predictors <br>
+        <i> <b>D. none of the above</b> </i> <br> <br>
+
+        <b>35. The multiple coefficient of determination is computed by </b> <br>
+        A. dividing SSR by SST <br>
+        B. dividing SST by SSR <br>
+        <i> <b>C. dividing SST by SSE</b> </i> <br>
+        D. none of the above <br> <br>
+
+        <b> 36. For a multiple regression model, SST = 200 and SSE = 50. The multiple coefficient of determination is </b> <br>
+        A. 0.25 <br>
+        <i> <b>B. 4.00 </b> </i> <br>
+        C. 0.75 <br>
+        D. none of the above <br> <br>
+
+        <b> 37. A nearest neighbor approach is best used </b> <br>
+        A. with large-sized datasets. <br>
+        <i> <b> B. when irrelevant attributes have been removed from the data. </b> </i> <br>
+        C. when a generalized model of the data is desireable. <br>
+        D. when an explanation of what has been found is of primary importance. <br> <br>
+        <b> 38. Determine which is the best approach for each problem. </b> <br>
+        <i> A. supervised learning <br>
+          B. unsupervised clustering <br>
+          C. data query </i> <br> <br>
+
+        <b> 38.1. What is the average weekly salary of all female employees under forty years of age? (C) <br>
+          38.2. Develop a profile for credit card customers likely to carry an average monthly balance of more than $1000.00. (A) <br>
+          38.3. Determine the characteristics of a successful used car salesperson. (A) <br>
+          38.4. What attribute similarities group customers holding one or several insurance policies? (A) <br>
+          38.5. Do meaningful attribute relationships exist in a database containing information about credit card customers? (B) <br>
+          38.6. Do single men play more golf than married men? (C) <br>
+          38.7. Determine whether a credit card transaction is valid or fraudulent (A) </b> <br> <br>
+
+        <b> 39. Another name for an output attribute. </b> <br>
+        A. predictive variable <br>
+        <i> <b>B. independent variable</b> </i> <br>
+        C. estimated variable <br>
+        D. dependent variable <br> <br>
+
+        <b> 40. Classification problems are distinguished from estimation problems in that </b> <br>
+        A. classification problems require the output attribute to be numeric. <br>
+        B. classification problems require the output attribute to be categorical. <br>
+        <i> <b>C. classification problems do not allow an output attribute.</b> </i> <br>
+        D. classification problems are designed to predict future outcome. <br> <br>
+
+        <b>41. Which statement is true about prediction problems?</b> <br>
+        A. The output attribute must be categorical. <br>
+        B. The output attribute must be numeric. <br>
+        C. The resultant model is designed to determine future outcomes. <br>
+        <i> <b>D. The resultant model is designed to classify current behavior.</b> </i> <br> <br>
+
+        <b>42. Which statement about outliers is true?</b> <br>
+        A. Outliers should be identified and removed from a dataset. <br>
+        B. Outliers should be part of the training dataset but should not be present in the test data. <br>
+        C. Outliers should be part of the test dataset but should not be present in the training data. <br>
+        <i> <b>D. The nature of the problem determines how outliers are used.</b> </i> <br>
+        E. More than one of a,b,c or d is true. <br> <br>
+
+        <b> 43. Which statement is true about neural network and linear regression models? </b> <br>
+        <i> <b>A. Both models require input attributes to be numeric.</b> </i> <br>
+        B. Both models require numeric attributes to range between 0 and 1. <br>
+        C. The output of both models is a categorical attribute value. <br>
+        D. Both techniques build models whose output is determined by a linear sum of weighted input attribute values. <br>
+        E. More than one of a,b,c or d is true. <br> <br>
+
+        <b> 44. Which of the following is a common use of unsupervised clustering? </b> <br>
+        <i> <b>A. detect outliers</b> </i> <br>
+        B. determine a best set of input attributes for supervised learning <br>
+        C. evaluate the likely performance of a supervised learner model <br>
+        D. determine if meaningful relationships can be found in a dataset <br>
+        E. All of a,b,c, and d are common uses of unsupervised clustering. <br> <br>
+
+        <b> 45. The average positive difference between computed and desired outcome values, called as </b> <br>
+        A. root mean squared error <br>
+        B. mean squared error <br>
+        C. mean absolute error <br>
+        <i> <b>D. mean positive error</b> </i> <br> <br>
+
+        <b> 46. Selecting data so as to assure that each class is properly represented in both the training and test set. </b> <br>
+        A. cross validation <br>
+        <i> <b>B. stratification</b> </i> <br>
+        C. verification <br>
+        D. bootstrapping <br> <br>
+
+        <b> 47. The standard error is defined as the square root of this computation. </b> <br>
+        <i> <b>A. The sample variance divided by the total number of sample instances.</b> </i> <br>
+        B. The population variance divided by the total number of sample instances. <br>
+        C. The sample variance divided by the sample mean. <br>
+        D. The population variance divided by the sample mean. <br> <br>
+
+        <b>48. Data used to optimize the parameter settings of a supervised learner model.</b> <br>
+        A. training <br>
+        B. test <br>
+        C. verification <br>
+        <i> <b>D. validation</b> </i> <br> <br>
+
+        <b>49. Bootstrapping allows us to</b> <br>
+        <i> <b>A. choose the same training instance several times.</b> </i> <br>
+        B. choose the same test set instance several times. <br>
+        C. build models with alternative subsets of the training data several times. <br>
+        D. test a model with alternative subsets of the test data several times. <br> <br>
+
+        <b> 50. The correlation between the number of years an employee has worked for a company and
+          the salary of the employee is 0.75. What can be said about employee salary and years
+          worked? </b> <br>
+        A. There is no relationship between salary and years worked. <br>
+        <i> <b> B. Individuals that have worked for the company the longest have higher salaries. </b> </i> <br>
+        C. Individuals that have worked for the company the longest have lower salaries. <br>
+        D. The majority of employees have been with the company a long time. <br>
+        E. The majority of employees have been with the company a short period of time. <br> <br>
+
+        <b> 51. The correlation coefficient for two real-valued attributes is –0.85. What does this value tell
+          you? </b> <br>
+        A. The attributes are not linearly related. <br>
+        B. As the value of one attribute increases the value of the second attribute also increases. <br>
+        <i> <b>C. As the value of one attribute decreases the value of the second attribute increases.</b> </i> <br>
+        D. The attributes show a curvilinear relationship. <br> <br>
+
+        <b> 52. The average squared difference between classifier predicted output and actual output. </b> <br>
+        <i> <b>A. mean squared error</b> </i> <br>
+        B. root mean squared error <br>
+        C. mean absolute error <br>
+        D. mean relative error <br> <br>
+
+        <b> 53. Simple regression assumes a __________ relationship between the input attribute and
+          output attribute. </b> <br>
+        <i> <b>A. linear</b> </i> <br>
+        B. quadratic <br>
+        C. reciprocal <br>
+        D. inverse <br> <br>
+
+        <b> 54. Regression trees are often used to model _______ data. </b> <br>
+        A. linear <br>
+        <i> <b>B. nonlinear</b> </i> <br>
+        C. categorical <br>
+        D. symmetrical <br> <br>
+
+        <b> 55. The leaf nodes of a model tree are </b> <br>
+        A. averages of numeric output attribute values. <br>
+        B. nonlinear regression equations. <br>
+        <i> <b>C. linear regression equations.</b> </i> <br>
+        D. sums of numeric output attribute values. <br> <br>
+
+        <b> 56. Logistic regression is a ________ regression technique that is used to model data having a
+          _____outcome. </b> <br>
+        A. linear, numeric <br>
+        B. linear, binary <br>
+        C. nonlinear, numeric <br>
+        <i> <b>D. nonlinear, binary</b> </i> <br> <br>
+
+        <b> 57. This technique associates a conditional probability value with each data instance. </b> <br>
+        A. linear regression <br>
+        <i> <b>B. logistic regression</b> </i> <br>
+        C. simple regression <br>
+        D. multiple linear regression <br> <br>
+
+        <b> 58. This supervised learning technique can process both numeric and categorical input attributes. </b> <br>
+        <i> <b>A. linear regression</b> </i> <br>
+        B. Bayes classifier <br>
+        C. logistic regression <br>
+        D. backpropagation learning <br> <br>
+
+        <b>59. With Bayes classifier, missing data items are</b> <br>
+        A. treated as equal compares. <br>
+        <i> <b>B. treated as unequal compares.</b> </i> <br>
+        C. replaced with a default value. <br>
+        D. ignored. <br> <br>
+
+        <b> 60. This clustering algorithm merges and splits nodes to help modify nonoptimal partitions. </b> <br>
+        A. agglomerative clustering <br>
+        B. expectation maximization <br>
+        C. conceptual clustering <br>
+        <i> <b>D. K-Means clustering</b> </i> <br> <br>
+
+        <b> 61. This clustering algorithm initially assumes that each data instance represents a single cluster. </b> <br>
+        A. agglomerative clustering <br>
+        B. conceptual clustering <br>
+        <i> <b> C. K-Means clustering</b> </i> <br>
+        D. expectation maximization <br> <br>
+
+        <b> 62. This unsupervised clustering algorithm terminates when mean values computed for the
+          current iteration of the algorithm are identical to the computed mean values for the previous
+          iteration. </b> <br>
+        A. agglomerative clustering <br>
+        B. conceptual clustering <br>
+        <i> <b>C. K-Means clustering</b> </i> <br>
+        D. expectation maximization <br> <br>
+
+        <b> 63. Machine learning techniques differ from statistical techniques in that machine learning
+          methods </b> <br>
+        A. typically assume an underlying distribution for the data. <br>
+        <i> <b>B. are better able to deal with missing and noisy data.</b> </i> <br>
+        C. are not able to explain their behavior. <br>
+        D. have trouble with large-sized datasets. <br> <br>
+
+        <br>
+
+
+        <b class="header" style="font-size: 29px;">2 marks questions : </b> <br> <br>
+
+
+        <b> 64. How do you handle missing or corrupted data in a dataset? </b> <br>
+        A ) drop missing rows or columns <br>
+        B) replace missing values with mean/median/mode <br>
+        C) assign a unique category to missing values <br>
+        <i> <b>D) all of the above </b> </i> <br> <br>
+
+        <b> 65. What is the purpose of performing cross validation? </b> <br>
+        A) To asses the predictive performance of the models <br>
+        B) To judge how the trained model performs outside the sample on test data. <br>
+        <i> <b>C) Both A & B</b> </i> <br> <br>
+
+        <b> 66. Why is second order differencing in time series needed? </b> <br>
+        A) To remove stationarity <br>
+        B) To find the maxima or minima at the local point <br>
+        <i> <b>C) Both A & B</b> </i> <br> <br>
+
+        <b> 67. When performing regression or classification which of the following is the correct way to pre-process the data? </b> <br>
+        <i> <b> Normalize the data > PCA (Principal Component Analysis) > Training </b> </i> <br> <br>
+
+        <b> 68. Which of the following Is an example of feature extraction? </b> <br>
+        A) Constructing bag of words vector from an email <br>
+        B) Applying PCA projects to a large high dimensional data <br>
+        C) Removing stopwards in a sentence <br>
+        <i> <b>D) All of the above</b> </i> <br> <br>
+
+        <b> 69. Which of the following is true about Naïve bay’s algorithm? </b> <br>
+        A) Assume that all the features in a data set are equally important <br>
+        B) Assume that all the features in a data set are independent <br>
+        <i> <b>C) Both A & B</b> </i> <br> <br>
+
+        <b> 70. Which of the following statements about regularisation is not correct? </b> <br>
+        A) Using too a large a value of lamda can cause your hypothesis to underfit the data <br>
+        B) Using too a large a value of lamda can cause your hypothesis to overfit the data <br>
+        C) Using a very large value of lamda cannot hurt the performance of your hypothesis <br>
+        <i> <b>D) None of the above</b> </i> <br> <br>
+
+        <b> 71. How can you prevent a clustering algorithm from getting stuck in bad local optima? </b> <br>
+        A) Set the same seed value for each run <br>
+        B) Use multiple random initializations <br>
+        <i> <b>C) Both A & B</b> </i> <br> <br>
+
+        <b> 72. Which of the following techniques can be used for normalization in text mining? </b> <br>
+        A) Stemming <br>
+        B) Lemmatization <br>
+        C) Stopward removal <br>
+        <i> <b>D) Both A & B</b> </i> <br> <br>
+
+        <b> 73. In which of the following cases will K means clustering fail to give good results? </b> <br>
+        1. Data points with outliers <br>
+        2. Data points with different densities <br>
+        3. Data points with non convex shapes <br>
+        <i> <b> For all the three cases </b> </i> <br> <br>
+
+        <b> 74. What is a sentence parser typically used for? <br>
+          <i> Answer: It is used to parse sentences to derive their most likely syntax tree structures. </i> </b> <br> <br>
+
+        <b> 75. Suppose you have trained a logistic regression classifier and it outputs a new example ‘X’ with a prediction HO(X) = 0.2. This means what? </b> <br>
+        <i> <b> Answer: Our estimate for P(Y) = 0 for X </b> </i> <br> <br>
+
+        <b> 76. What is pca.components_ in SKlearn? <br>
+          <i> Answer: Set of all Eigen vectors for the projection space. </i> </b> <br> <br>
+
+        <b> 77. Which of the following is an example of a deterministic algorithm? <br>
+          <i> Answer: PCA </i> <br> <br>
+          78. A Pearson correlation between to variables is 0 but their values can still be related to each other? <br>
+          <i> Answer: True </i> </b> <br> <br>
+
+
+        <b> 79. Imagine you are solving a classification problem with highly imbalanced class, the majority class is observed 99% of times in the training data. Your model has 99% accuracy after taking the predictions on the test data. Which of the
+          following is true in such a case? </b> <br>
+        1. Accuracy matrix is not is good idea for imbalanced class problems <br>
+        2. Accuracy matrix is a good idea for imbalanced class problems <br>
+        3. Precision and recall matrix are good for imbalanced class problems <br>
+        4. Precision and recall matrix are not good for imbalanced class problems <br>
+        <i> <b>Option 1 & 3 are correct</b> </i> <br> <br>
+
+        <b> 80. Which of the following option is true for overall execution time for 5 fold cross validation with 10 different values of max_depth? </b> <br>
+        <i> <b> Answer: More than 600 secs</b> </i> <br> <br>
+
+        <b> 81. What would you do in PCA to get the same projection as SVM? </b> <br>
+        <i> <b> Answer: Transform data to zero mean.</b> </i> <br> <br>
+
+        <b> 82. Which of the following value of K will have least leave-one-out cross validation accuracy? </b>
+        <br>
+        <i> <b> Answer: 1-NN</b> </i> <br> <br>
+
+        <b> 83. Which of the following options can be used to get global minima K-means algorithm? </b> <br>
+        A) Try to run algorithm for different centroid initialization <br>
+        B) Adjust number of iterations <br>
+        C) Find out the optimal no. of clusters <br>
+        <i> <b> D) All of the above</b> </i> <br> <br>
+
+        <b> 84. Imagine, you have a 28 * 28 image and you run a 3 * 3 convolution neural network on it with the input depth of 3 and output depth of 8. <br> Note: Stride is 1 and you are using same padding. </b> <br>
+        A) 28 width, 28 height and 8 depth <br> <i> <b>B) 13 width, 13 height and 8 depth</b> </i> <br>
+        C) 28 width, 13 height and 8 depth <br> D) 13 width, 28 height and 8 depth <br> <br>
+
+        <b> 85. A feature F1 can take certain values: A, B, C, D, E & F and represents grade of from a college. <br>
+          Which of the following statement is true for the above case? </b> <br>
+        1. Feature F1 is an example of nominal variable <br>
+        <i> <b>2. Feature F1 is an example of ordinal variable</b> </i> <br>
+        3. It doesn’t belong to any of the above category <br>
+        4. Both of these <br> <br>
+
+        <b> 86. Assume that there is a blackbox algorithm which takes training data with multiple observations T1, T2, T3,………., Tn and a new observation Q1. The blackbox the nearest neighbour of Q1 say Ti and its corresponding class level Ci. Assume
+          that this blackbox algorithm is same as 1- NN. <br>
+          It is possible to construct a K-NN classification algorithm based on this blackbox alone where number of training observations is very large compared to K? <br> <br>
+          <i> Answer: True </i> </b> <br> <br>
+
+        <b> 87. Assume that there is a blackbox algorithm which takes training data with multiple observations T1, T2, T3,………., Tn and a new observation Q1. The blackbox the nearest neighbour of Q1 say Ti and its corresponding class level Ci. Assume
+          that this blackbox algorithm is same as 1- NN. <br>
+          Instead of using 1-NN blackbox we want to use the J-NN algorithm for blackbox, where J>1? <br>
+          Which of the following option is correct for finding K-NN using J-NN? <br>
+          <i> A) J must be a proper factor of K. </i> </b> <br>
+        B) J must be greater than K. <br>
+        C) Not possible <br> <br>
+
+        <b class="header" style="font-size: 29px;">3 Marks Questions : </b> <br> <br>
+
+        <b>88. Which of the following statement is true ? </b> <br>
+        <b><i>A. In Gradient Boosting (GD) and Stocharstic Gradient Boosting (SGD),
+            we update set of parameters in an iterative manner.</i></b> <br>
+        B. In Stocharstic Gradient Boosting (SGD), we have to run for all the sample for a single update of parameter in each iteration. <br>
+        C. In Gradient Boosting (GD), we either use entire data or a subject of training data to update a parameter in each iteration. <br> <br>
+
+        <b>89. Which of the following hyper parameter of Random Forest increase, causes overfit the data ? </b> <br>
+        <b><i> Answer : depth of tree</i></b> <br> <br>
+
+        <b>90. Imagine you are working with analytics vidya and you want to develop a machine learning algorithm which predict no. of views on the article. Your analysis is based on teachers name, author name, no. of articles written by same author
+          on the analytics vidya platform in past etc.
+          Which of the following evalution matrix would you choose in that case ?
+        </b> <br>
+
+        <b><i>Answer : Min square error</i></b> <br> <br>
+
+        <b>91. Lets say that you are using action funX in hidden layer of neural network at a particular neuron for given input
+          you get the output -0.001. Which of the following activation function should X represent ? </b> <br>
+
+        <b><i> Answer : fun 8</i></b> <br> <br>
+
+        <b>92. Which of the following are one of the important step to preprocess the text in NLP based project.</b> <br>
+        A. stemming <br>
+        B. stopward removal <br>
+        C. object standardization <br>
+        <b><i>D. All of these </i></b><br> <br>
+
+        <b>93. Adding a anon important feature to a linear regression method may result in </b> <br>
+        <b><i>Answer : increase in R^2 (square of R)</i></b> <br> <br>
+
+        <b>94. In KNN model, it is very likely to overfit due to cause of dimensionality. Which of the following option would
+          you consider to handle this problem.</b> <br>
+        <b><i>Answer : dimensionality reduction & feature selection</i></b> <br> <br>
+
+        <b>95. Which of the following is true about the gradient boosting tree ? </b> <br>
+        A. in each stage introduce a regression tree to compensate the shortcoming of the existing model. <br>
+        B. we can use gradient distance (GD) method to minimze the loss finction <br>
+        <b><i>C. Both of these</i></b> <br> <br>
+
+        <b>96. To apply bagging to regression trees, which of the following are true in that case ? </b> <br>
+        A. we build the n regression with n bootstrap sample <br>
+        B. we take the average of n regression tree <br>
+        C. each tree has high varience with low biased. <br>
+        <b><i>D. All of the above </i></b> <br> <br>
+
+        <b>97. When you find noise in data, which of the following option will you considered in KNN ? </b> <br>
+        <b><i>Answer : I will increase the value of k.</i></b> <br> <br>
+
+        <b>98. Suppose you want to predict the class of the data point, x=1 and y=1 using eucleadian distance in 3NN in which class these data points belongs to ? </b> <br>
+        <b><i>Answer : positive (+) class</i></b> <br> <br>
+
+        <b>99. Which of the following will be eucleadian distance between the two data points A(1,3) and (2,3)</b> <br>
+        <b><i>Answer : 1</i></b> <br> <br>
+
+        <b>100. Suppose you are working on a binary classification problems with three input features and you choose to apply a bagging algorithm X. On this data, you choose max_features = 2 and the n_estimators = 3, assume that each estimation has
+          70% accuracy. Note that algorithm X is aggregating the result of individual estimates based on maximum voting. What will be the maximum accuracy you can get ? </b> <br>
+        <b><i>Answer : 100%</i></b> <br> <br>
+
+        <b>101. In random forest or gradient boosting algorithm, features can be of any type, for example it can be a continuous features or categorical features. Which of the following option is true when you consider this type of feature.</b> <br>
+        <b><i>Answer : Both the algorithm can handle real valued attributes by discretizing them.</i></b> <br> <br>
+
+        <b>102. Which of the following is true about training and testing error in the case described below. Suppose you want to apply Adaboost algorithm on data D which has 'T' observation. You have set half of the data for training and half for
+          testing initially. Now you want to increase the no. of data points for training. [ T1, T2, ------- Tn where T1 > T2 < T3 < ---- < Tn ]</b> <br>
+            <b><i>Answer : the difference between training error and testing error decreases as the no. of observation increases.</i></b> <br> <br>
+
+            <b>103. Suppose you are given 3 variables x, y, z, the pearson corelation coefficient for (x,y), (y,z) & (x,z), c1, c2 and
+              c3 respectively. Now you have added 2 in all the values of X, and substract 2 from all the values of Y and Z remains the same.
+              The new coefficient (x,y), (y,z) & (x,z) are given by D1, D2 and D3 respectively. How do the values of D1, D2, D3 relates to c1,
+              c2, c3 ? </b> <br>
+            <b><i>Answer : D1=c1, D2=c2, D3=c3. </i></b> <br> <br> <br>
+
+            <br> <br> <br> <br> <br> <br> <br> <br>
+
+            <b>104. Which of the following techniques can be used for the purpose of keyword normalization, the process of converting
+              a keyword into its base form? </b><br>
+
+            <i> 1. Lemmatization <br>
+              2. Levenshtein <br>
+              3. Stemming <br>
+              4. Soundexbr </i> <br> <br>
+
+            A) 1 and 2 <br>
+            B) 2 and 4 <br>
+            <b><i>C) 1 and 3</i></b> <br>
+            D) 1, 2 and 3 <br>
+            E) 2, 3 and 4 <br>
+            F) 1, 2, 3 and 4 <br>
+            <br>
+
+            <b>105. Which of the following models can perform tweet classification with regards to context mentioned above? </b> <br>
+
+            A) Naive Bayes <br>
+            B) SVM <br>
+            <b><i>C) None of the above</i></b> <br> <br>
+
+            <b> Explanation : you are given only the data of tweets and no other information, which means there is no target variable
+              present. One cannot train a supervised learning model, both svm and naive bayes are supervised learning techniques. </b>
+            <br> <br>
+            <b>106. What is the major difference between CRF (Conditional Random Field) and HMM (Hidden Markov Model)? </b> <br>
+
+
+            A) CRF is Generative whereas HMM is Discriminative model <br>
+            <b><i>B) CRF is Discriminative whereas HMM is Generative model</i></b> <br>
+            C) Both CRF and HMM are Generative model <br>
+            D) Both CRF and HMM are Discriminative model <br> <br>
+
+
+
+
+      </p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </section>
+
+
+
+
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">MachineLearning</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">A newly created site that talks about Machine Learning...</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_intro.html" target="_blank">ML Introduction</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623" target="_blank">ML Classifiers</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="binaryVSmulti.html" target="_blank">ML Classification</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="linear_regression.html" target="_blank">Linear Regression</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="logisticReg.html" target="_blank">Logistic Regression</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="decisionTree.html" target="_blank">Decision Tree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="leastSquare.html" target="_blank">Least Square Method</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="supportVector.html" target="_blank">Support Vector Machine</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="kMeansClustering.html" target="_blank">K-Means Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="discretization.html" target="_blank">Binning or Discretization</a>
+            </li>
+
+
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="naiveBayes.html" target="_blank">Naive Bayes Classifier</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="normalDistribution.html" target="_blank">Normal Distribution</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="confusionMatrix.html" target="_blank">Confusion Matrix</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="randomForest.html" target="_blank">Random Forest</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="gd.html" target="_blank">Gradient Descent</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-9">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">IMPORTANT LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ml_clustering.html" target="_blank">ML Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="clustering.html" target="_blank">More About Clustering</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="ensemableLearning.html">Ensemable Learning Techniques</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="https://www.geeksforgeeks.org/neural-networks-a-beginners-guide/" target="_blank">Neural Networks</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white" href="nlp.html" target="_blank">NLP Text Preprocessing</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Machine Learning —
+          <a rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">RupakDey</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/rupak.dey.94849/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="error.html">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>

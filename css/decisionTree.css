@@ -1,0 +1,28 @@
+section {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+}
+
+section p img {
+    margin-left: 450px;
+    padding-left: 400px;
+    width: 340px;
+    height: 250px;
+    text-align: center;
+}
+section p .main-image {
+    margin-left: 250px;
+    margin-right: 100px;
+    width: 200px;
+    height: 90px;
+}
+
+section h2 .heading {
+    font-size: 40px;
+}
+
+section div .header {
+    font-size: 22px;
+}
